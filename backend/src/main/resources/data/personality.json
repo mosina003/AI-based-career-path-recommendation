@@ -1,0 +1,563 @@
+{
+  "category": "personality_insights",
+  "questions": [
+  {
+    "id": "pi-q1",
+    "question": "Which type of work do you enjoy the most?",
+    "options": [
+      { "text": "Analyzing data and solving logical problems", "career_weights": { "Data Analyst": 3, "AI Engineer": 2 } },
+      { "text": "Designing user interfaces and experiences", "career_weights": { "UI/UX Designer": 3, "Frontend Developer": 2 } },
+      { "text": "Managing projects and coordinating teams", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+      { "text": "Building and optimizing software or applications", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } }
+    ],
+    "weight": 7
+  },
+  {
+    "id": "pi-q2",
+    "question": "How do you prefer to learn new skills?",
+    "options": [
+      { "text": "Through hands-on practice and projects", "career_weights": { "AI Engineer": 3, "Full Stack Developer": 2 } },
+      { "text": "By reading books and research papers", "career_weights": { "Data Scientist": 3, "AI Researcher": 2 } },
+      { "text": "Through interactive courses and tutorials", "career_weights": { "Cloud Engineer": 3, "Backend Developer": 2 } },
+      { "text": "By collaborating and learning from peers", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 6
+  },
+  {
+    "id": "pi-q3",
+    "question": "Which environment motivates you the most?",
+    "options": [
+      { "text": "Structured and predictable", "career_weights": { "Data Analyst": 3, "Cloud Engineer": 2 } },
+      { "text": "Fast-paced and dynamic", "career_weights": { "Full Stack Developer": 3, "AI Engineer": 2 } },
+      { "text": "Creative and innovative", "career_weights": { "UI/UX Designer": 3, "AI Researcher": 2 } },
+      { "text": "Team-oriented and collaborative", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 5
+  },
+  {
+    "id": "pi-q4",
+    "question": "How do you usually solve problems?",
+    "options": [
+      { "text": "Step by step using logic and analysis", "career_weights": { "Data Analyst": 3, "AI Engineer": 2 } },
+      { "text": "By thinking creatively and finding unique solutions", "career_weights": { "AI Researcher": 3, "UI/UX Designer": 2 } },
+      { "text": "By testing different approaches practically", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "By discussing with others and taking suggestions", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 6
+  },
+  {
+    "id": "pi-q5",
+    "question": "Which of these activities excites you the most?",
+    "options": [
+      { "text": "Creating machine learning models or AI solutions", "career_weights": { "AI Engineer": 3, "Data Scientist": 2 } },
+      { "text": "Designing apps or interactive websites", "career_weights": { "UI/UX Designer": 3, "Frontend Developer": 2 } },
+      { "text": "Analyzing data to make business decisions", "career_weights": { "Data Analyst": 3, "Business Analyst": 2 } },
+      { "text": "Planning projects and coordinating teams", "career_weights": { "Project Manager": 3, "Cloud Engineer": 2 } }
+    ],
+    "weight": 7
+  },
+  {
+    "id": "pi-q6",
+    "question": "When working on a project, you prefer to:",
+    "options": [
+      { "text": "Handle technical challenges and coding", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Research and experiment with new technologies", "career_weights": { "AI Researcher": 3, "AI Engineer": 2 } },
+      { "text": "Interpret data to provide insights", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "Lead the team and manage tasks", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 6
+  },
+  {
+    "id": "pi-q7",
+    "question": "What type of tasks do you enjoy most?",
+    "options": [
+      { "text": "Logical problem solving", "career_weights": { "Data Analyst": 3, "AI Engineer": 2 } },
+      { "text": "Creative design and innovation", "career_weights": { "UI/UX Designer": 3, "AI Researcher": 2 } },
+      { "text": "Technical development and coding", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Organizing and planning", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 5
+  },
+  {
+    "id": "pi-q8",
+    "question": "Which statement describes you best?",
+    "options": [
+      { "text": "I enjoy discovering patterns and insights", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "I love building and coding applications", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "I thrive on innovation and research", "career_weights": { "AI Researcher": 3, "AI Engineer": 2 } },
+      { "text": "I excel at guiding and managing people", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 6
+  },
+  {
+    "id": "pi-q9",
+    "question": "Which environment do you prefer?",
+    "options": [
+      { "text": "Structured, logical, and data-driven", "career_weights": { "Data Analyst": 3, "Cloud Engineer": 2 } },
+      { "text": "Innovative, research-focused", "career_weights": { "AI Researcher": 3, "AI Engineer": 2 } },
+      { "text": "Hands-on coding and problem-solving", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Team-oriented with leadership opportunities", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 5
+  },
+  {
+    "id": "pi-q10",
+    "question": "If you had to choose, which would you prioritize?",
+    "options": [
+      { "text": "Accuracy and insights from data", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "Creating innovative AI solutions", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Building functional and efficient software", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Managing people and resources effectively", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 7
+  },
+  
+  {
+    "id": "pi-q11",
+    "question": "When faced with a new problem, you prefer to:",
+    "options": [
+      { "text": "Analyze data and find logical solutions", "career_weights": { "Data Analyst": 3, "AI Engineer": 2 } },
+      { "text": "Experiment creatively until it works", "career_weights": { "AI Researcher": 3, "UI/UX Designer": 2 } },
+      { "text": "Build a practical software solution", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Collaborate with a team to find the solution", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 6
+  },
+  {
+    "id": "pi-q12",
+    "question": "Which activity excites you the most?",
+    "options": [
+      { "text": "Exploring trends in data", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "Researching AI and machine learning algorithms", "career_weights": { "AI Researcher": 3, "AI Engineer": 2 } },
+      { "text": "Designing and coding apps", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Planning strategies and managing teams", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 7
+  },
+  {
+    "id": "pi-q13",
+    "question": "How do you usually make decisions?",
+    "options": [
+      { "text": "Based on data and analysis", "career_weights": { "Data Analyst": 3, "Cloud Engineer": 2 } },
+      { "text": "By testing innovative approaches", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "By evaluating software or technical feasibility", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "By consulting and coordinating with others", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 6
+  },
+  {
+    "id": "pi-q14",
+    "question": "You feel most productive when:",
+    "options": [
+      { "text": "Working with numbers and statistics", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "Experimenting and learning new technologies", "career_weights": { "AI Researcher": 3, "AI Engineer": 2 } },
+      { "text": "Coding and building solutions", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Leading teams and planning tasks", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 5
+  },
+  {
+    "id": "pi-q15",
+    "question": "When working on a team project, you prefer to:",
+    "options": [
+      { "text": "Analyze and interpret project data", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "Research and suggest innovative solutions", "career_weights": { "AI Researcher": 3, "AI Engineer": 2 } },
+      { "text": "Handle coding and technical implementation", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Coordinate tasks and manage resources", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 6
+  },
+  {
+    "id": "pi-q16",
+    "question": "Which tool or activity appeals to you most?",
+    "options": [
+      { "text": "Spreadsheets, SQL, or data visualization tools", "career_weights": { "Data Analyst": 3, "Cloud Engineer": 2 } },
+      { "text": "Python, TensorFlow, or AI frameworks", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "React, Node.js, or full-stack frameworks", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Project management tools like Jira or Trello", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 7
+  },
+  {
+    "id": "pi-q17",
+    "question": "What motivates you the most?",
+    "options": [
+      { "text": "Solving analytical challenges", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "Creating cutting-edge AI technologies", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Developing functional software applications", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Managing teams and achieving goals", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 6
+  },
+  {
+    "id": "pi-q18",
+    "question": "When learning something new, you prefer:",
+    "options": [
+      { "text": "Structured courses and data analysis", "career_weights": { "Data Analyst": 3, "Cloud Engineer": 2 } },
+      { "text": "Exploration and experimentation", "career_weights": { "AI Researcher": 3, "AI Engineer": 2 } },
+      { "text": "Hands-on building and coding", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Discussions and team-based learning", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 5
+  },
+  {
+    "id": "pi-q19",
+    "question": "Which statement describes your work style best?",
+    "options": [
+      { "text": "I am data-driven and detail-oriented", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "I enjoy solving complex technical challenges", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "I like building efficient and functional systems", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "I excel at organizing, planning, and delegating tasks", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 6
+  },
+  {
+    "id": "pi-q20",
+    "question": "If you had to pick, you would prefer to work on:",
+    "options": [
+      { "text": "Analyzing patterns and trends", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "Developing innovative AI models", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Building robust software applications", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Leading and coordinating teams effectively", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 7
+  },
+  
+  {
+    "id": "pi-q21",
+    "question": "Which type of projects excite you the most?",
+    "options": [
+      { "text": "Analyzing and interpreting complex datasets", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "Developing AI models and algorithms", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Designing and coding interactive applications", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Planning and managing project workflows", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 6
+  },
+  {
+    "id": "pi-q22",
+    "question": "How do you prefer to approach a difficult task?",
+    "options": [
+      { "text": "Break it down logically and analyze", "career_weights": { "Data Analyst": 3, "Cloud Engineer": 2 } },
+      { "text": "Experiment and innovate until it works", "career_weights": { "AI Researcher": 3, "AI Engineer": 2 } },
+      { "text": "Use practical coding and implementation", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Coordinate and delegate tasks effectively", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 7
+  },
+  {
+    "id": "pi-q23",
+    "question": "Which of the following describes your ideal task?",
+    "options": [
+      { "text": "Finding insights from large data sets", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "Creating AI solutions to solve real-world problems", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Building functional and scalable software", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Leading teams and coordinating tasks efficiently", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 6
+  },
+  {
+    "id": "pi-q24",
+    "question": "What motivates you the most at work?",
+    "options": [
+      { "text": "Finding patterns and drawing conclusions", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "Innovation and exploring new technologies", "career_weights": { "AI Researcher": 3, "AI Engineer": 2 } },
+      { "text": "Building and optimizing software systems", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Managing people and resources effectively", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 7
+  },
+  {
+    "id": "pi-q25",
+    "question": "When faced with multiple solutions, you usually:",
+    "options": [
+      { "text": "Pick the one with the most data-backed logic", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "Experiment and test innovative approaches", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Choose the one that is easiest to implement technically", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Coordinate and consult with team members before deciding", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 6
+  },
+  {
+    "id": "pi-q26",
+    "question": "Which of these tasks appeals to you most?",
+    "options": [
+      { "text": "Creating reports and dashboards from data", "career_weights": { "Data Analyst": 3, "Cloud Engineer": 2 } },
+      { "text": "Building AI-powered models or solutions", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Developing software applications and APIs", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Planning schedules and assigning tasks", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 7
+  },
+  {
+    "id": "pi-q27",
+    "question": "Your preferred approach to learning new technology is:",
+    "options": [
+      { "text": "Analyzing data and understanding trends", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "Experimenting and building prototypes", "career_weights": { "AI Researcher": 3, "AI Engineer": 2 } },
+      { "text": "Hands-on coding and building applications", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Collaborating and discussing ideas with peers", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 6
+  },
+  {
+    "id": "pi-q28",
+    "question": "Which work style suits you best?",
+    "options": [
+      { "text": "Structured and analytical", "career_weights": { "Data Analyst": 3, "Cloud Engineer": 2 } },
+      { "text": "Innovative and experimental", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Hands-on and technical", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Organized and people-focused", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 5
+  },
+  {
+    "id": "pi-q29",
+    "question": "Which type of challenge excites you the most?",
+    "options": [
+      { "text": "Finding hidden patterns in data", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "Creating AI solutions to complex problems", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Developing functional software under constraints", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Managing a team to achieve goals efficiently", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 7
+  },
+  {
+    "id": "pi-q30",
+    "question": "Which of the following best describes your career goal?",
+    "options": [
+      { "text": "Work with data and analytics", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "Innovate using AI and machine learning", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Develop software solutions and applications", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Lead teams and manage projects", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 6
+  },
+  
+  {
+    "id": "pi-q31",
+    "question": "Which type of work environment do you thrive in?",
+    "options": [
+      { "text": "Data-driven and analytical", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "Innovative and research-focused", "career_weights": { "AI Researcher": 3, "AI Engineer": 2 } },
+      { "text": "Technical and development-oriented", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Organized and team-oriented", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 6
+  },
+  {
+    "id": "pi-q32",
+    "question": "How do you handle complex problems?",
+    "options": [
+      { "text": "Break them down and analyze logically", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "Think creatively and experiment with solutions", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Develop and implement practical solutions", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Consult team members and strategize together", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 7
+  },
+  {
+    "id": "pi-q33",
+    "question": "Which skill excites you the most?",
+    "options": [
+      { "text": "Analyzing large datasets", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "Building AI and ML models", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Coding software applications", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Leading teams and projects", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 6
+  },
+  {
+    "id": "pi-q34",
+    "question": "When learning a new technology, you prefer:",
+    "options": [
+      { "text": "Studying patterns, reports, and data trends", "career_weights": { "Data Analyst": 3, "Cloud Engineer": 2 } },
+      { "text": "Experimenting and testing ideas practically", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Coding hands-on projects and applications", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Collaborating with team members and mentors", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 5
+  },
+  {
+    "id": "pi-q35",
+    "question": "Which statement fits your personality best?",
+    "options": [
+      { "text": "I enjoy drawing insights from numbers", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "I love experimenting and innovating", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "I like building functional applications", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "I excel in organizing and leading teams", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 6
+  },
+  {
+    "id": "pi-q36",
+    "question": "Which type of task do you prefer?",
+    "options": [
+      { "text": "Working with structured data and analysis", "career_weights": { "Data Analyst": 3, "Cloud Engineer": 2 } },
+      { "text": "Developing AI or ML solutions", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Programming and debugging software", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Planning and managing project activities", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 7
+  },
+  {
+    "id": "pi-q37",
+    "question": "Which work approach suits you best?",
+    "options": [
+      { "text": "Logical and analytical", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "Innovative and experimental", "career_weights": { "AI Researcher": 3, "AI Engineer": 2 } },
+      { "text": "Hands-on coding and development", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Organized and team-focused", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 6
+  },
+  {
+    "id": "pi-q38",
+    "question": "What motivates you the most in your career?",
+    "options": [
+      { "text": "Finding insights and patterns in data", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "Creating innovative AI solutions", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Building functional and robust software", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Leading teams and achieving goals", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 7
+  },
+  {
+    "id": "pi-q39",
+    "question": "Which of the following best describes your problem-solving style?",
+    "options": [
+      { "text": "Data-driven and methodical", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "Innovative and experimental", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Practical and technical", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Collaborative and organized", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 6
+  },
+  {
+    "id": "pi-q40",
+    "question": "When working on a project, you prefer to:",
+    "options": [
+      { "text": "Focus on analytics and insights", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "Experiment with AI models", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Develop software applications", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Manage teams and workflows", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 7
+  },
+  
+  {
+    "id": "pi-q41",
+    "question": "Which type of task do you enjoy the most?",
+    "options": [
+      { "text": "Analyzing and interpreting data", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "Designing AI algorithms and solutions", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Developing software applications", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Planning and coordinating project activities", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 6
+  },
+  {
+    "id": "pi-q42",
+    "question": "Which activity do you find most rewarding?",
+    "options": [
+      { "text": "Extracting insights from complex datasets", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "Building innovative AI/ML solutions", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Creating functional and efficient software", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Leading teams to successful project completion", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 7
+  },
+  {
+    "id": "pi-q43",
+    "question": "How do you approach learning a new tool or technology?",
+    "options": [
+      { "text": "Analyze its features and practical applications", "career_weights": { "Data Analyst": 3, "Cloud Engineer": 2 } },
+      { "text": "Experiment and build prototypes", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Implement it hands-on in projects", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Discuss with peers and apply collaboratively", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 6
+  },
+  {
+    "id": "pi-q44",
+    "question": "Which work style suits you best?",
+    "options": [
+      { "text": "Structured and analytical", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "Innovative and experimental", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Hands-on and technical", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Organized and people-focused", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 5
+  },
+  {
+    "id": "pi-q45",
+    "question": "What kind of challenge do you enjoy?",
+    "options": [
+      { "text": "Finding insights from complex data", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "Creating AI solutions for real-world problems", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Developing efficient and robust software", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Managing teams and achieving project goals", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 6
+  },
+  {
+    "id": "pi-q46",
+    "question": "When working on a team project, you prefer to:",
+    "options": [
+      { "text": "Analyze data and provide insights", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "Research and implement innovative solutions", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Code and build software components", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Organize and coordinate tasks", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 7
+  },
+  {
+    "id": "pi-q47",
+    "question": "What drives you the most in your career?",
+    "options": [
+      { "text": "Understanding and interpreting data", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "Innovating with AI and machine learning", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Developing software and solving technical problems", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Leading teams and managing projects", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 6
+  },
+  {
+    "id": "pi-q48",
+    "question": "Which type of learning appeals to you most?",
+    "options": [
+      { "text": "Analyzing and studying datasets", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "Experimenting and testing AI models", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Hands-on coding and development", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Collaborative discussions and team planning", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 5
+  },
+  {
+    "id": "pi-q49",
+    "question": "How do you approach problem-solving?",
+    "options": [
+      { "text": "Using data and logical reasoning", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "Experimenting and innovating solutions", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Practical coding and implementation", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Organizing tasks and consulting others", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 6
+  },
+  {
+    "id": "pi-q50",
+    "question": "Which type of task would you prefer?",
+    "options": [
+      { "text": "Working with analytics and statistics", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "Developing AI or ML solutions", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Coding and building software applications", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Managing teams and project workflows", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 7
+  }
+
+
+
+
+]
+}

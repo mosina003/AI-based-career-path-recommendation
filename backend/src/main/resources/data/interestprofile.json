@@ -1,0 +1,557 @@
+{
+    "category": "interestprofile",
+  "questions": [
+  {
+    "id": "ip-q1",
+    "question": "Which activity do you enjoy most in your free time?",
+    "options": [
+      { "text": "Solving puzzles, brain teasers, or logic games", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "Exploring AI, robotics, or futuristic tech", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Building apps, websites, or games", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Organizing clubs, events, or social activities", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 6
+  },
+  {
+    "id": "ip-q2",
+    "question": "Which type of content do you prefer for learning or entertainment?",
+    "options": [
+      { "text": "Data visualization, analytics blogs, or infographics", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "AI/ML tutorials, robotics channels, or tech experiments", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Coding tutorials, programming challenges, or tech projects", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Management guides, productivity tips, or leadership talks", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 6
+  },
+  {
+    "id": "ip-q3",
+    "question": "Which type of hobby projects attract you the most?",
+    "options": [
+      { "text": "Analyzing personal data like finances, stats, or trends", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "Creating AI-powered gadgets or experiments", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Developing apps, websites, or small software projects", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Planning events, meetups, or social initiatives", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 7
+  },
+  {
+    "id": "ip-q4",
+    "question": "Which type of competition would you enjoy most?",
+    "options": [
+      { "text": "Data analysis or statistics challenges", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "AI/ML hackathons or robotics competitions", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Coding contests or app development competitions", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Strategy games, leadership challenges, or management quizzes", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 6
+  },
+  {
+    "id": "ip-q5",
+    "question": "Which type of content do you enjoy browsing online?",
+    "options": [
+      { "text": "Data insights, charts, and research articles", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "AI innovations, robotics, and futuristic tech", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Coding projects, tech blogs, or software tutorials", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Leadership, project management, or team collaboration tips", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 6
+  },
+  {
+    "id": "ip-q6",
+    "question": "Which type of DIY project would you try?",
+    "options": [
+      { "text": "Collecting and analyzing personal or online data", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "Building AI gadgets, chatbots, or robots", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Coding apps, websites, or mini-games", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Planning events, campaigns, or community activities", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 7
+  },
+  {
+    "id": "ip-q7",
+    "question": "Which type of books or articles do you enjoy most?",
+    "options": [
+      { "text": "Data science, analytics, or statistics books", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "AI research papers or robotics manuals", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Programming guides, coding blogs, or tutorials", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Leadership, management, and productivity books", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 6
+  },
+  {
+    "id": "ip-q8",
+    "question": "Which type of club or society would you join?",
+    "options": [
+      { "text": "Data analysis or statistics club", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "AI/Robotics/Tech innovation club", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Coding, app development, or hackathon club", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Project management, leadership, or strategy club", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 7
+  },
+  {
+    "id": "ip-q9",
+    "question": "Which type of fun activity excites you the most?",
+    "options": [
+      { "text": "Solving logical puzzles or data challenges", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "Experimenting with AI or robotics gadgets", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Building software projects or games", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Organizing games, events, or competitions", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 6
+  },
+  {
+    "id": "ip-q10",
+    "question": "Which type of weekend activity would you prefer?",
+    "options": [
+      { "text": "Analyzing datasets or statistics for fun", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "Working on AI, ML, or robotics projects", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Coding personal apps, websites, or games", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Planning and leading social events or projects", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 7
+  },
+  
+  {
+    "id": "ip-q11",
+    "question": "Which type of tech event would you enjoy attending?",
+    "options": [
+      { "text": "Data analytics seminars or workshops", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "AI/ML hackathons or robotics expos", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Coding bootcamps or app development events", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Leadership, strategy, or entrepreneurship conferences", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 6
+  },
+  {
+    "id": "ip-q12",
+    "question": "Which type of magazine or blog do you read for fun?",
+    "options": [
+      { "text": "Data trends, analytics, and statistics", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "AI, robotics, and future tech", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Coding projects, app ideas, and tech tutorials", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Management strategies, productivity, and leadership", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 6
+  },
+  {
+    "id": "ip-q13",
+    "question": "Which weekend outing sounds most interesting to you?",
+    "options": [
+      { "text": "Visiting data science or tech museums", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "Participating in AI/robotics workshops", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Attending coding meetups or hackathons", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Volunteering to organize social or community events", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 7
+  },
+  {
+    "id": "ip-q14",
+    "question": "Which type of personal project excites you the most?",
+    "options": [
+      { "text": "Building dashboards or analyzing datasets", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "Creating AI models or robotics projects", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Developing websites, apps, or games", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Planning events or managing team projects", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 6
+  },
+  {
+    "id": "ip-q15",
+    "question": "Which type of YouTube/online channel would you subscribe to?",
+    "options": [
+      { "text": "Data visualization, analytics, or statistics", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "AI, robotics, and tech innovation", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Programming, coding tutorials, or tech DIY", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Leadership, management, or personal development", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 6
+  },
+  {
+    "id": "ip-q16",
+    "question": "Which type of challenge would you enjoy the most?",
+    "options": [
+      { "text": "Data analysis competitions", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "AI/ML problem-solving contests", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Coding hackathons or app-building contests", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Team management or strategy games", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 7
+  },
+  {
+    "id": "ip-q17",
+    "question": "Which type of volunteering or club would you like to join?",
+    "options": [
+      { "text": "Data science or analytics group", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "AI/robotics or tech innovation club", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Programming, hackathon, or app development group", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Leadership, strategy, or event management team", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 6
+  },
+  {
+    "id": "ip-q18",
+    "question": "Which activity do you find most exciting in your college/university?",
+    "options": [
+      { "text": "Data clubs, competitions, or research projects", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "AI, robotics, or innovation labs", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Coding clubs, app development projects, or hackathons", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Event planning, leadership, or management societies", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 7
+  },
+  {
+    "id": "ip-q19",
+    "question": "Which type of media do you consume most for fun?",
+    "options": [
+      { "text": "Data science podcasts, blogs, or videos", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "AI/ML tech channels or robotics content", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Programming tutorials, coding challenges, or projects", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Leadership, management, or productivity content", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 6
+  },
+  {
+    "id": "ip-q20",
+    "question": "Which type of creative activity do you enjoy most?",
+    "options": [
+      { "text": "Designing dashboards, graphs, or data stories", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "Building AI models or robotic devices", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Developing apps, games, or software tools", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Planning events, workshops, or group activities", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 7
+  },
+  
+  {
+    "id": "ip-q21",
+    "question": "Which outdoor activity appeals to you most?",
+    "options": [
+      { "text": "Collecting data during field experiments", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "Testing robotics or AI gadgets outdoors", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Participating in coding marathons or hackathons", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Organizing community events or sports", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 6
+  },
+  {
+    "id": "ip-q22",
+    "question": "Which type of exhibition would you like to visit?",
+    "options": [
+      { "text": "Data science or analytics exhibitions", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "AI/ML or robotics exhibitions", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Tech fairs showcasing coding projects", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Leadership, entrepreneurship, or management fairs", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 6
+  },
+  {
+    "id": "ip-q23",
+    "question": "Which type of puzzle or game do you enjoy most?",
+    "options": [
+      { "text": "Logic puzzles or data-driven challenges", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "AI simulation or robotics-based games", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Coding or app development challenges", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Strategy games or leadership simulations", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 7
+  },
+  {
+    "id": "ip-q24",
+    "question": "Which type of online course would you enjoy for fun?",
+    "options": [
+      { "text": "Data analytics, visualization, or statistics", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "AI/ML, robotics, or futuristic tech", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Web development, app development, or coding projects", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Project management, productivity, or leadership", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 6
+  },
+  {
+    "id": "ip-q25",
+    "question": "Which type of hobby group would you like to join?",
+    "options": [
+      { "text": "Data science or statistics study groups", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "AI or robotics innovation clubs", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Coding clubs or hackathon teams", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Leadership or community project clubs", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 7
+  },
+  {
+    "id": "ip-q26",
+    "question": "Which type of weekend learning activity do you prefer?",
+    "options": [
+      { "text": "Analyzing datasets or doing small research projects", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "Experimenting with AI models or robotics kits", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Building apps, websites, or coding mini-projects", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Organizing team activities or community projects", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 6
+  },
+  {
+    "id": "ip-q27",
+    "question": "Which type of creative challenge would excite you?",
+    "options": [
+      { "text": "Creating visual dashboards or data stories", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "Designing AI/ML solutions or robotics projects", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Developing apps, games, or websites", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Planning and executing social or management events", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 7
+  },
+  {
+    "id": "ip-q28",
+    "question": "Which type of exploration activity interests you most?",
+    "options": [
+      { "text": "Exploring datasets and analytics tools", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "Testing new AI or robotics technologies", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Experimenting with coding frameworks or apps", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Exploring project management or leadership strategies", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 6
+  },
+  {
+    "id": "ip-q29",
+    "question": "Which type of social activity appeals to you most?",
+    "options": [
+      { "text": "Joining data or analytics discussion groups", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "Participating in AI/robotics tech meetups", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Coding or hackathon meetups", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Leadership, planning, or team-building activities", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 7
+  },
+  {
+    "id": "ip-q30",
+    "question": "Which type of tech exploration excites you the most?",
+    "options": [
+      { "text": "Analyzing datasets and predicting trends", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "Building and experimenting with AI or robotic models", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Creating apps, software, or games from scratch", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Organizing projects, events, or collaborative activities", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 6
+  },
+  {
+    "id": "ip-q31",
+    "question": "Which type of tech podcast would you listen to?",
+    "options": [
+      { "text": "Data science and analytics discussions", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "AI innovations, robotics, and machine learning", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Programming tutorials, app development, and coding hacks", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Leadership, management, and productivity tips", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 6
+  },
+  {
+    "id": "ip-q32",
+    "question": "Which type of creative content do you enjoy producing?",
+    "options": [
+      { "text": "Data visualizations, infographics, or dashboards", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "AI models, robots, or intelligent devices", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Apps, websites, or software projects", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Event plans, community projects, or team initiatives", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 7
+  },
+  {
+    "id": "ip-q33",
+    "question": "Which type of group activity do you prefer?",
+    "options": [
+      { "text": "Data science meetups or research teams", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "AI/robotics labs or innovation clubs", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Coding clubs, hackathons, or programming groups", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Leadership, strategy, or project management teams", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 6
+  },
+  {
+    "id": "ip-q34",
+    "question": "Which type of hobby would you pursue in your free time?",
+    "options": [
+      { "text": "Analyzing trends, statistics, and data", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "Creating AI-powered tools or robotic devices", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Developing apps, games, or web platforms", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Planning and organizing events or teams", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 6
+  },
+  {
+    "id": "ip-q35",
+    "question": "Which type of tech challenge motivates you the most?",
+    "options": [
+      { "text": "Analyzing complex datasets", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "Building AI models or robotics solutions", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Solving programming problems or app projects", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Leading a project or organizing a team challenge", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 7
+  },
+  {
+    "id": "ip-q36",
+    "question": "Which type of weekend project would you enjoy?",
+    "options": [
+      { "text": "Creating visual reports and dashboards", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "Building AI or robotic prototypes", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Coding personal apps or websites", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Organizing events, workshops, or team projects", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 6
+  },
+  {
+    "id": "ip-q37",
+    "question": "Which type of club would you join for personal growth?",
+    "options": [
+      { "text": "Data science or analytics club", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "AI, robotics, or tech innovation club", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Coding, app development, or hackathon club", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Leadership, project management, or strategy club", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 7
+  },
+  {
+    "id": "ip-q38",
+    "question": "Which type of online hobby community interests you most?",
+    "options": [
+      { "text": "Data analytics or statistics communities", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "AI/robotics and tech forums", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Coding groups, developer forums, or hackathon channels", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Leadership, management, or entrepreneurial communities", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 6
+  },
+  {
+    "id": "ip-q39",
+    "question": "Which type of online learning excites you most?",
+    "options": [
+      { "text": "Analyzing datasets or statistics projects", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "AI/ML or robotics courses", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Web development, app development, or coding tutorials", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Project management, leadership, or organizational courses", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 7
+  },
+  {
+    "id": "ip-q40",
+    "question": "Which type of creative weekend activity would you prefer?",
+    "options": [
+      { "text": "Building dashboards, infographics, or data stories", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "Designing AI models or robotic devices", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Creating apps, websites, or mini-games", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Planning events, campaigns, or team activities", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 6
+  },
+  {
+    "id": "ip-q41",
+    "question": "Which type of research activity interests you most?",
+    "options": [
+      { "text": "Analyzing datasets and finding patterns", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "Experimenting with AI models or robotics", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Developing software tools or applications", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Studying project management and team workflows", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 7
+  },
+  {
+    "id": "ip-q42",
+    "question": "Which type of competition would you like to participate in?",
+    "options": [
+      { "text": "Data analytics or statistics challenges", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "AI hackathons or robotics contests", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Coding competitions or app development contests", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Leadership, project management, or strategy contests", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 6
+  },
+  {
+    "id": "ip-q43",
+    "question": "Which type of weekend workshop would you attend?",
+    "options": [
+      { "text": "Data visualization and analytics workshop", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "AI or robotics innovation workshop", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Coding, app development, or web workshop", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Leadership, strategy, or management workshop", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 6
+  },
+  {
+    "id": "ip-q44",
+    "question": "Which type of online forum would you join?",
+    "options": [
+      { "text": "Data science and analytics forums", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "AI, robotics, and ML discussion groups", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Coding, programming, or software development forums", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Leadership, management, and business forums", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 7
+  },
+  {
+    "id": "ip-q45",
+    "question": "Which type of tech hobby excites you the most?",
+    "options": [
+      { "text": "Working on datasets or statistics projects", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "Creating AI solutions or robotics models", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Building apps, websites, or games", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Planning and executing events or projects", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 6
+  },
+  {
+    "id": "ip-q46",
+    "question": "Which type of learning activity excites you most?",
+    "options": [
+      { "text": "Exploring new data sets or analytics techniques", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "Learning AI/ML algorithms or robotics programming", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Mastering new coding languages or frameworks", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Studying project management or leadership skills", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 7
+  },
+  {
+    "id": "ip-q47",
+    "question": "Which type of personal project would you enjoy?",
+    "options": [
+      { "text": "Creating dashboards or analyzing datasets", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "Developing AI or robotics projects", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Building apps, games, or software tools", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Planning events, projects, or workshops", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 6
+  },
+  {
+    "id": "ip-q48",
+    "question": "Which type of tech exploration do you enjoy most?",
+    "options": [
+      { "text": "Analyzing patterns, trends, and statistics", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "Building and experimenting with AI/robotics", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Developing apps, websites, or games", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Organizing projects, teams, or community events", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 7
+  },
+  {
+    "id": "ip-q49",
+    "question": "Which type of social or community activity interests you most?",
+    "options": [
+      { "text": "Participating in data science communities", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "Joining AI or robotics clubs and forums", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Coding groups, hackathons, or app dev communities", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Leadership, planning, or project-based communities", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 6
+  },
+  {
+    "id": "ip-q50",
+    "question": "Which type of weekend challenge would you enjoy?",
+    "options": [
+      { "text": "Analyzing datasets or solving statistics problems", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+      { "text": "Creating AI models or robotics experiments", "career_weights": { "AI Engineer": 3, "AI Researcher": 2 } },
+      { "text": "Building apps, websites, or coding challenges", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "Organizing team challenges or community projects", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "weight": 7
+  }
+]
+}

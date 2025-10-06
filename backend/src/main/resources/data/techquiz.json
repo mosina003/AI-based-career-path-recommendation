@@ -1,0 +1,777 @@
+{
+  "category": "Tech Quiz",
+  "questions": [
+    {
+      "id": "TQ1",
+      "question": "Which data structure uses LIFO principle?",
+      "options": [
+        { "text": "Queue", "career_weights": { "Backend Developer": 1 } },
+        { "text": "Stack", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 1 } },
+        { "text": "Tree", "career_weights": { "AI Engineer": 1 } },
+        { "text": "Graph", "career_weights": { "Data Scientist": 1 } }
+      ],
+      "correct_answer": "Stack"
+    },
+    {
+      "id": "TQ2",
+      "question": "Which sorting algorithm has the best average case time complexity?",
+      "options": [
+        { "text": "Merge Sort", "career_weights": { "Backend Developer": 2, "Data Scientist": 1 } },
+        { "text": "Bubble Sort", "career_weights": { "Frontend Developer": 1 } },
+        { "text": "Insertion Sort", "career_weights": { "Backend Developer": 1 } },
+        { "text": "Selection Sort", "career_weights": { "Data Analyst": 1 } }
+      ],
+      "correct_answer": "Merge Sort"
+    },
+    {
+      "id": "TQ3",
+      "question": "In Java, which keyword is used to prevent inheritance?",
+      "options": [
+        { "text": "abstract", "career_weights": { "Backend Developer": 1 } },
+        { "text": "final", "career_weights": { "Backend Developer": 3 } },
+        { "text": "const", "career_weights": { "Frontend Developer": 1 } },
+        { "text": "static", "career_weights": { "Full Stack Developer": 1 } }
+      ],
+      "correct_answer": "final"
+    },
+    {
+      "id": "TQ4",
+      "question": "Which SQL command is used to remove a table completely?",
+      "options": [
+        { "text": "DELETE", "career_weights": { "Data Analyst": 1 } },
+        { "text": "REMOVE", "career_weights": { "Frontend Developer": 1 } },
+        { "text": "DROP", "career_weights": { "Backend Developer": 3, "Data Analyst": 2 } },
+        { "text": "TRUNCATE", "career_weights": { "Backend Developer": 2 } }
+      ],
+      "correct_answer": "DROP"
+    },
+    {
+      "id": "TQ5",
+      "question": "Which of the following is NOT a NoSQL database?",
+      "options": [
+        { "text": "MongoDB", "career_weights": { "Backend Developer": 2 } },
+        { "text": "Cassandra", "career_weights": { "Cloud Engineer": 1 } },
+        { "text": "PostgreSQL", "career_weights": { "Data Analyst": 2 } },
+        { "text": "Redis", "career_weights": { "Backend Developer": 1 } }
+      ],
+      "correct_answer": "PostgreSQL"
+    },
+    {
+      "id": "TQ6",
+      "question": "Which algorithm is commonly used for shortest path in a graph?",
+      "options": [
+        { "text": "Dijkstra’s Algorithm", "career_weights": { "Data Scientist": 3, "AI Engineer": 2 } },
+        { "text": "DFS", "career_weights": { "Backend Developer": 1 } },
+        { "text": "BFS", "career_weights": { "Data Scientist": 2 } },
+        { "text": "Prim’s Algorithm", "career_weights": { "AI Engineer": 1 } }
+      ],
+      "correct_answer": "Dijkstra’s Algorithm"
+    },
+    {
+      "id": "TQ7",
+      "question": "Which HTTP method is idempotent?",
+      "options": [
+        { "text": "POST", "career_weights": { "Backend Developer": 1 } },
+        { "text": "PUT", "career_weights": { "Backend Developer": 3 } },
+        { "text": "PATCH", "career_weights": { "Full Stack Developer": 1 } },
+        { "text": "DELETE", "career_weights": { "Backend Developer": 2 } }
+      ],
+      "correct_answer": "PUT"
+    },
+    {
+      "id": "TQ8",
+      "question": "Which design pattern ensures only one instance of a class is created?",
+      "options": [
+        { "text": "Factory Pattern", "career_weights": { "Backend Developer": 1 } },
+        { "text": "Singleton Pattern", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 1 } },
+        { "text": "Observer Pattern", "career_weights": { "AI Engineer": 1 } },
+        { "text": "Decorator Pattern", "career_weights": { "Frontend Developer": 1 } }
+      ],
+      "correct_answer": "Singleton Pattern"
+    },
+    {
+      "id": "TQ9",
+      "question": "Which Python library is best suited for data manipulation?",
+      "options": [
+        { "text": "TensorFlow", "career_weights": { "AI Engineer": 2 } },
+        { "text": "NumPy", "career_weights": { "Data Scientist": 1 } },
+        { "text": "Pandas", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+        { "text": "Matplotlib", "career_weights": { "Data Analyst": 2 } }
+      ],
+      "correct_answer": "Pandas"
+    },
+    {
+      "id": "TQ10",
+      "question": "Which type of machine learning involves labeled training data?",
+      "options": [
+        { "text": "Supervised Learning", "career_weights": { "AI Engineer": 3, "Data Scientist": 2 } },
+        { "text": "Unsupervised Learning", "career_weights": { "AI Engineer": 2 } },
+        { "text": "Reinforcement Learning", "career_weights": { "AI Engineer": 2 } },
+        { "text": "Self-Supervised Learning", "career_weights": { "Data Scientist": 1 } }
+      ],
+      "correct_answer": "Supervised Learning"
+    },
+    {
+      "id": "TQ11",
+      "question": "Which of the following is NOT a pillar of OOP?",
+      "options": [
+        { "text": "Encapsulation", "career_weights": { "Backend Developer": 2, "Full Stack Developer": 1 } },
+        { "text": "Polymorphism", "career_weights": { "Backend Developer": 3, "AI Engineer": 1 } },
+        { "text": "Abstraction", "career_weights": { "Backend Developer": 2, "Full Stack Developer": 1 } },
+        { "text": "Compilation", "career_weights": { "Data Scientist": 1 } }
+      ],
+      "correct_answer": "Compilation"
+    },
+    {
+      "id": "TQ12",
+      "question": "Which HTTP status code indicates 'Resource Not Found'?",
+      "options": [
+        { "text": "200", "career_weights": { "Backend Developer": 1 } },
+        { "text": "404", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+        { "text": "500", "career_weights": { "Backend Developer": 2 } },
+        { "text": "302", "career_weights": { "Frontend Developer": 1 } }
+      ],
+      "correct_answer": "404"
+    },
+    {
+      "id": "TQ13",
+      "question": "Which SQL clause is used to sort the result set?",
+      "options": [
+        { "text": "GROUP BY", "career_weights": { "Data Analyst": 2 } },
+        { "text": "ORDER BY", "career_weights": { "Backend Developer": 2, "Data Analyst": 3 } },
+        { "text": "WHERE", "career_weights": { "Data Analyst": 2 } },
+        { "text": "HAVING", "career_weights": { "Backend Developer": 1 } }
+      ],
+      "correct_answer": "ORDER BY"
+    },
+    {
+      "id": "TQ14",
+      "question": "Which of these is a NoSQL database?",
+      "options": [
+        { "text": "MySQL", "career_weights": { "Backend Developer": 1 } },
+        { "text": "MongoDB", "career_weights": { "Backend Developer": 3, "Data Scientist": 2 } },
+        { "text": "PostgreSQL", "career_weights": { "Data Analyst": 1 } },
+        { "text": "SQLite", "career_weights": { "Full Stack Developer": 1 } }
+      ],
+      "correct_answer": "MongoDB"
+    },
+    {
+      "id": "TQ15",
+      "question": "Which Python keyword is used to define a function?",
+      "options": [
+        { "text": "func", "career_weights": { "Backend Developer": 1 } },
+        { "text": "def", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+        { "text": "function", "career_weights": { "Frontend Developer": 1 } },
+        { "text": "lambda", "career_weights": { "AI Engineer": 2, "Data Scientist": 2 } }
+      ],
+      "correct_answer": "def"
+    },
+    {
+      "id": "TQ16",
+      "question": "In Java, which interface is used to implement multi-threading?",
+      "options": [
+        { "text": "Runnable", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+        { "text": "Serializable", "career_weights": { "Backend Developer": 1 } },
+        { "text": "Cloneable", "career_weights": { "Data Scientist": 1 } },
+        { "text": "Comparator", "career_weights": { "Backend Developer": 1 } }
+      ],
+      "correct_answer": "Runnable"
+    },
+    {
+      "id": "TQ17",
+      "question": "Which of the following is an immutable collection in Java?",
+      "options": [
+        { "text": "ArrayList", "career_weights": { "Backend Developer": 1 } },
+        { "text": "HashMap", "career_weights": { "Backend Developer": 2 } },
+        { "text": "Collections.unmodifiableList", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 1 } },
+        { "text": "LinkedList", "career_weights": { "Backend Developer": 1 } }
+      ],
+      "correct_answer": "Collections.unmodifiableList"
+    },
+    {
+      "id": "TQ18",
+      "question": "Which of the following is a front-end technology?",
+      "options": [
+        { "text": "ReactJS", "career_weights": { "Frontend Developer": 3, "Full Stack Developer": 2 } },
+        { "text": "Spring Boot", "career_weights": { "Backend Developer": 3 } },
+        { "text": "NodeJS", "career_weights": { "Full Stack Developer": 3 } },
+        { "text": "Django", "career_weights": { "Backend Developer": 2 } }
+      ],
+      "correct_answer": "ReactJS"
+    },
+    {
+      "id": "TQ19",
+      "question": "Which algorithm is used for finding minimum spanning tree?",
+      "options": [
+        { "text": "Dijkstra", "career_weights": { "AI Engineer": 2, "Data Scientist": 1 } },
+        { "text": "Prim", "career_weights": { "Backend Developer": 2, "AI Engineer": 2 } },
+        { "text": "Kruskal", "career_weights": { "Backend Developer": 2, "AI Engineer": 2 } },
+        { "text": "Floyd-Warshall", "career_weights": { "AI Engineer": 2 } }
+      ],
+      "correct_answer": "Prim and Kruskal"
+    },
+    {
+      "id": "TQ20",
+      "question": "Which HTTP status code represents a successful request?",
+      "options": [
+        { "text": "200", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+        { "text": "400", "career_weights": { "Backend Developer": 1 } },
+        { "text": "500", "career_weights": { "Backend Developer": 2 } },
+        { "text": "301", "career_weights": { "Frontend Developer": 1 } }
+      ],
+      "correct_answer": "200"
+    },
+    {
+      "id": "TQ21",
+      "question": "Which of the following is a characteristic of a linked list?",
+      "options": [
+        { "text": "Fixed size", "career_weights": { "Backend Developer": 1 } },
+        { "text": "Dynamic size", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 1 } },
+        { "text": "Contiguous memory allocation", "career_weights": { "Data Scientist": 1 } },
+        { "text": "Direct indexing like array", "career_weights": { "Frontend Developer": 1 } }
+      ],
+      "correct_answer": "Dynamic size"
+    },
+    {
+      "id": "TQ22",
+      "question": "In Python, which of the following is used to handle exceptions?",
+      "options": [
+        { "text": "try-except", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+        { "text": "if-else", "career_weights": { "Backend Developer": 1 } },
+        { "text": "for-while", "career_weights": { "Data Scientist": 1 } },
+        { "text": "switch-case", "career_weights": { "Frontend Developer": 1 } }
+      ],
+      "correct_answer": "try-except"
+    },
+    {
+      "id": "TQ23",
+      "question": "Which of the following is used for dependency injection in Spring?",
+      "options": [
+        { "text": "Controller", "career_weights": { "Backend Developer": 1 } },
+        { "text": "Autowired", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+        { "text": "Repository", "career_weights": { "Backend Developer": 2 } },
+        { "text": "Service", "career_weights": { "Backend Developer": 2 } }
+      ],
+      "correct_answer": "Autowired"
+    },
+    {
+      "id": "TQ24",
+      "question": "Which of the following data structures is used in BFS traversal?",
+      "options": [
+        { "text": "Stack", "career_weights": { "Backend Developer": 1 } },
+        { "text": "Queue", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 1 } },
+        { "text": "Linked List", "career_weights": { "Data Scientist": 1 } },
+        { "text": "Tree", "career_weights": { "AI Engineer": 1 } }
+      ],
+      "correct_answer": "Queue"
+    },
+    {
+      "id": "TQ25",
+      "question": "Which of the following is a NoSQL database type?",
+      "options": [
+        { "text": "Key-Value Store", "career_weights": { "Backend Developer": 3, "Data Scientist": 2 } },
+        { "text": "Relational Database", "career_weights": { "Backend Developer": 1 } },
+        { "text": "CSV File", "career_weights": { "Data Analyst": 1 } },
+        { "text": "XML File", "career_weights": { "Data Analyst": 1 } }
+      ],
+      "correct_answer": "Key-Value Store"
+    },
+    {
+      "id": "TQ26",
+      "question": "Which of the following is true about REST API?",
+      "options": [
+        { "text": "Stateful", "career_weights": { "Backend Developer": 1 } },
+        { "text": "Stateless", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+        { "text": "Only for Databases", "career_weights": { "Data Analyst": 1 } },
+        { "text": "Only for Frontend", "career_weights": { "Frontend Developer": 1 } }
+      ],
+      "correct_answer": "Stateless"
+    },
+    {
+      "id": "TQ27",
+      "question": "Which algorithm is used for depth-first traversal in a graph?",
+      "options": [
+        { "text": "BFS", "career_weights": { "Data Scientist": 1 } },
+        { "text": "DFS", "career_weights": { "Backend Developer": 3, "AI Engineer": 2 } },
+        { "text": "Dijkstra", "career_weights": { "AI Engineer": 2 } },
+        { "text": "Prim", "career_weights": { "Backend Developer": 1 } }
+      ],
+      "correct_answer": "DFS"
+    },
+    {
+      "id": "TQ28",
+      "question": "Which Java collection allows duplicate elements?",
+      "options": [
+        { "text": "Set", "career_weights": { "Backend Developer": 1 } },
+        { "text": "List", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+        { "text": "Map", "career_weights": { "Backend Developer": 2 } },
+        { "text": "Queue", "career_weights": { "Full Stack Developer": 1 } }
+      ],
+      "correct_answer": "List"
+    },
+    {
+      "id": "TQ29",
+      "question": "Which of these is NOT a front-end framework?",
+      "options": [
+        { "text": "React", "career_weights": { "Frontend Developer": 3, "Full Stack Developer": 2 } },
+        { "text": "Angular", "career_weights": { "Frontend Developer": 3, "Full Stack Developer": 2 } },
+        { "text": "Spring Boot", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+        { "text": "Vue", "career_weights": { "Frontend Developer": 3, "Full Stack Developer": 2 } }
+      ],
+      "correct_answer": "Spring Boot"
+    },
+    {
+      "id": "TQ30",
+      "question": "Which Python library is mainly used for numerical computations?",
+      "options": [
+        { "text": "NumPy", "career_weights": { "Data Scientist": 3, "AI Engineer": 2 } },
+        { "text": "Matplotlib", "career_weights": { "Data Analyst": 2 } },
+        { "text": "Seaborn", "career_weights": { "Data Analyst": 2 } },
+        { "text": "Pandas", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } }
+      ],
+      "correct_answer": "NumPy"
+    }, 
+    {
+      "id": "TQ31",
+      "question": "Which data structure is best for implementing a priority queue?",
+      "options": [
+        { "text": "Array", "career_weights": { "Backend Developer": 1 } },
+        { "text": "Heap", "career_weights": { "Backend Developer": 3, "AI Engineer": 2 } },
+        { "text": "Linked List", "career_weights": { "Full Stack Developer": 1 } },
+        { "text": "Stack", "career_weights": { "Backend Developer": 1 } }
+      ],
+      "correct_answer": "Heap"
+    },
+    {
+      "id": "TQ32",
+      "question": "Which of these is a mutable data type in Python?",
+      "options": [
+        { "text": "Tuple", "career_weights": { "Backend Developer": 1 } },
+        { "text": "List", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+        { "text": "String", "career_weights": { "Frontend Developer": 1 } },
+        { "text": "Integer", "career_weights": { "Data Scientist": 1 } }
+      ],
+      "correct_answer": "List"
+    },
+    {
+      "id": "TQ33",
+      "question": "Which Spring annotation is used to define a service class?",
+      "options": [
+        { "text": "@Controller", "career_weights": { "Backend Developer": 1 } },
+        { "text": "@Service", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+        { "text": "@Repository", "career_weights": { "Backend Developer": 2 } },
+        { "text": "@Component", "career_weights": { "Backend Developer": 2 } }
+      ],
+      "correct_answer": "@Service"
+    },
+    {
+      "id": "TQ34",
+      "question": "Which type of database is Firebase?",
+      "options": [
+        { "text": "Relational", "career_weights": { "Backend Developer": 1 } },
+        { "text": "NoSQL", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+        { "text": "In-Memory SQL", "career_weights": { "Data Analyst": 1 } },
+        { "text": "GraphQL", "career_weights": { "Full Stack Developer": 1 } }
+      ],
+      "correct_answer": "NoSQL"
+    },
+    {
+      "id": "TQ35",
+      "question": "Which algorithm is commonly used for searching in a sorted array?",
+      "options": [
+        { "text": "Binary Search", "career_weights": { "Backend Developer": 3, "Data Scientist": 2 } },
+        { "text": "Linear Search", "career_weights": { "Backend Developer": 1 } },
+        { "text": "DFS", "career_weights": { "AI Engineer": 1 } },
+        { "text": "BFS", "career_weights": { "Backend Developer": 1 } }
+      ],
+      "correct_answer": "Binary Search"
+    },
+    {
+      "id": "TQ36",
+      "question": "Which of these is an advantage of using NoSQL databases?",
+      "options": [
+        { "text": "Horizontal scalability", "career_weights": { "Backend Developer": 3, "Cloud Engineer": 2 } },
+        { "text": "Complex joins", "career_weights": { "Data Analyst": 1 } },
+        { "text": "Strong ACID compliance", "career_weights": { "Backend Developer": 1 } },
+        { "text": "Fixed schema", "career_weights": { "Data Scientist": 1 } }
+      ],
+      "correct_answer": "Horizontal scalability"
+    },
+    {
+      "id": "TQ37",
+      "question": "Which of the following is a framework for unit testing in Java?",
+      "options": [
+        { "text": "JUnit", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+        { "text": "Mockito", "career_weights": { "Backend Developer": 2 } },
+        { "text": "Selenium", "career_weights": { "Frontend Developer": 2 } },
+        { "text": "Spring Boot", "career_weights": { "Backend Developer": 1 } }
+      ],
+      "correct_answer": "JUnit"
+    },
+    {
+      "id": "TQ38",
+      "question": "Which of these is a server-side language?",
+      "options": [
+        { "text": "JavaScript", "career_weights": { "Frontend Developer": 1, "Full Stack Developer": 2 } },
+        { "text": "PHP", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+        { "text": "HTML", "career_weights": { "Frontend Developer": 1 } },
+        { "text": "CSS", "career_weights": { "Frontend Developer": 1 } }
+      ],
+      "correct_answer": "PHP"
+    },
+    {
+      "id": "TQ39",
+      "question": "Which of the following sorting algorithms is stable?",
+      "options": [
+        { "text": "Merge Sort", "career_weights": { "Backend Developer": 3, "Data Scientist": 2 } },
+        { "text": "Quick Sort", "career_weights": { "Backend Developer": 2 } },
+        { "text": "Heap Sort", "career_weights": { "Backend Developer": 2 } },
+        { "text": "Selection Sort", "career_weights": { "Backend Developer": 1 } }
+      ],
+      "correct_answer": "Merge Sort"
+    },
+    {
+      "id": "TQ40",
+      "question": "Which command is used to create a virtual environment in Python?",
+      "options": [
+        { "text": "python -m venv env", "career_weights": { "Backend Developer": 3, "Data Scientist": 2 } },
+        { "text": "pip install venv", "career_weights": { "Backend Developer": 1 } },
+        { "text": "python -m virtualenv", "career_weights": { "Backend Developer": 2 } },
+        { "text": "conda create", "career_weights": { "Data Scientist": 2 } }
+      ],
+      "correct_answer": "python -m venv env"
+    },
+    {
+      "id": "TQ41",
+      "question": "Which of the following is a type of NoSQL database?",
+      "options": [
+        { "text": "Document Store", "career_weights": { "Backend Developer": 3, "Data Scientist": 2 } },
+        { "text": "Relational DB", "career_weights": { "Backend Developer": 1 } },
+        { "text": "Spreadsheet", "career_weights": { "Data Analyst": 1 } },
+        { "text": "XML Store", "career_weights": { "Full Stack Developer": 1 } }
+      ],
+      "correct_answer": "Document Store"
+    },
+    {
+      "id": "TQ42",
+      "question": "Which of the following is true for REST APIs?",
+      "options": [
+        { "text": "Stateless", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+        { "text": "Stateful", "career_weights": { "Backend Developer": 1 } },
+        { "text": "Only for databases", "career_weights": { "Data Analyst": 1 } },
+        { "text": "Only for frontend", "career_weights": { "Frontend Developer": 1 } }
+      ],
+      "correct_answer": "Stateless"
+    },
+    {
+      "id": "TQ43",
+      "question": "Which of these is an advantage of using a linked list over an array?",
+      "options": [
+        { "text": "Direct access", "career_weights": { "Backend Developer": 1 } },
+        { "text": "Dynamic size", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+        { "text": "Contiguous memory allocation", "career_weights": { "Data Scientist": 1 } },
+        { "text": "Faster indexing", "career_weights": { "Frontend Developer": 1 } }
+      ],
+      "correct_answer": "Dynamic size"
+    },
+    {
+      "id": "TQ44",
+      "question": "Which of the following is a functional programming language?",
+      "options": [
+        { "text": "Haskell", "career_weights": { "Backend Developer": 2, "AI Engineer": 3 } },
+        { "text": "Java", "career_weights": { "Backend Developer": 3 } },
+        { "text": "C++", "career_weights": { "Backend Developer": 2 } },
+        { "text": "Python", "career_weights": { "Full Stack Developer": 2 } }
+      ],
+      "correct_answer": "Haskell"
+    },
+    {
+      "id": "TQ45",
+      "question": "Which HTTP method is typically used to update a resource partially?",
+      "options": [
+        { "text": "POST", "career_weights": { "Backend Developer": 1 } },
+        { "text": "PUT", "career_weights": { "Backend Developer": 2, "Full Stack Developer": 2 } },
+        { "text": "PATCH", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+        { "text": "DELETE", "career_weights": { "Backend Developer": 1 } }
+      ],
+      "correct_answer": "PATCH"
+    },
+    {
+      "id": "TQ46",
+      "question": "Which algorithm is used for detecting cycles in a graph?",
+      "options": [
+        { "text": "DFS", "career_weights": { "Backend Developer": 3, "AI Engineer": 2 } },
+        { "text": "BFS", "career_weights": { "Backend Developer": 1 } },
+        { "text": "Dijkstra", "career_weights": { "AI Engineer": 2 } },
+        { "text": "Prim", "career_weights": { "Backend Developer": 1 } }
+      ],
+      "correct_answer": "DFS"
+    },
+    {
+      "id": "TQ47",
+      "question": "Which of the following is used for containerization in DevOps?",
+      "options": [
+        { "text": "Docker", "career_weights": { "Cloud Engineer": 3, "Backend Developer": 2 } },
+        { "text": "Kubernetes", "career_weights": { "Cloud Engineer": 3 } },
+        { "text": "Ansible", "career_weights": { "Cloud Engineer": 2 } },
+        { "text": "Jenkins", "career_weights": { "Backend Developer": 2 } }
+      ],
+      "correct_answer": "Docker"
+    },
+    {
+      "id": "TQ48",
+      "question": "Which Python library is used for data visualization?",
+      "options": [
+        { "text": "Matplotlib", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+        { "text": "NumPy", "career_weights": { "Data Scientist": 2 } },
+        { "text": "Scikit-learn", "career_weights": { "AI Engineer": 2 } },
+        { "text": "Pandas", "career_weights": { "Data Analyst": 3 } }
+      ],
+      "correct_answer": "Matplotlib"
+    },
+    {
+      "id": "TQ49",
+      "question": "Which of the following is an immutable data type in Python?",
+      "options": [
+        { "text": "List", "career_weights": { "Backend Developer": 1 } },
+        { "text": "Tuple", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+        { "text": "Dictionary", "career_weights": { "Backend Developer": 2 } },
+        { "text": "Set", "career_weights": { "Backend Developer": 1 } }
+      ],
+      "correct_answer": "Tuple"
+    },
+    {
+      "id": "TQ50",
+      "question": "Which Spring Boot annotation is used to run the main application?",
+      "options": [
+        { "text": "@SpringBootApplication", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+        { "text": "@Controller", "career_weights": { "Backend Developer": 1 } },
+        { "text": "@Service", "career_weights": { "Backend Developer": 2 } },
+        { "text": "@Repository", "career_weights": { "Backend Developer": 1 } }
+      ],
+      "correct_answer": "@SpringBootApplication"
+    },
+    {
+      "id": "TQ51",
+      "question": "Which data structure is used in a breadth-first search (BFS) algorithm?",
+      "options": [
+        { "text": "Stack", "career_weights": { "Backend Developer": 1 } },
+        { "text": "Queue", "career_weights": { "Backend Developer": 3, "AI Engineer": 2 } },
+        { "text": "Heap", "career_weights": { "Data Scientist": 1 } },
+        { "text": "Graph", "career_weights": { "Backend Developer": 2 } }
+      ],
+      "correct_answer": "Queue"
+    },
+    {
+      "id": "TQ52",
+      "question": "Which of the following sorting algorithms has the best average-case complexity?",
+      "options": [
+        { "text": "Bubble Sort", "career_weights": { "Backend Developer": 1 } },
+        { "text": "Merge Sort", "career_weights": { "Backend Developer": 3, "AI Engineer": 2 } },
+        { "text": "Insertion Sort", "career_weights": { "Backend Developer": 1 } },
+        { "text": "Selection Sort", "career_weights": { "Backend Developer": 1 } }
+      ],
+      "correct_answer": "Merge Sort"
+    },
+    {
+      "id": "TQ53",
+      "question": "Which of the following is an in-memory key-value store?",
+      "options": [
+        { "text": "Redis", "career_weights": { "Backend Developer": 3, "Cloud Engineer": 2 } },
+        { "text": "MySQL", "career_weights": { "Backend Developer": 2 } },
+        { "text": "PostgreSQL", "career_weights": { "Backend Developer": 2 } },
+        { "text": "Oracle", "career_weights": { "Backend Developer": 2 } }
+      ],
+      "correct_answer": "Redis"
+    },
+    {
+      "id": "TQ54",
+      "question": "Which of the following is NOT a characteristic of Object-Oriented Programming?",
+      "options": [
+        { "text": "Encapsulation", "career_weights": { "Backend Developer": 2 } },
+        { "text": "Polymorphism", "career_weights": { "Backend Developer": 2 } },
+        { "text": "Abstraction", "career_weights": { "Backend Developer": 2 } },
+        { "text": "Sequential Execution", "career_weights": { "Backend Developer": 3 } }
+      ],
+      "correct_answer": "Sequential Execution"
+    },
+    {
+      "id": "TQ55",
+      "question": "Which SQL clause is used to filter groups after aggregation?",
+      "options": [
+        { "text": "WHERE", "career_weights": { "Data Analyst": 1 } },
+        { "text": "HAVING", "career_weights": { "Data Analyst": 3, "Data Scientist": 2 } },
+        { "text": "GROUP BY", "career_weights": { "Data Analyst": 2 } },
+        { "text": "ORDER BY", "career_weights": { "Data Analyst": 1 } }
+      ],
+      "correct_answer": "HAVING"
+    },
+    {
+      "id": "TQ56",
+      "question": "Which of the following is a message broker software?",
+      "options": [
+        { "text": "RabbitMQ", "career_weights": { "Backend Developer": 3, "Cloud Engineer": 2 } },
+        { "text": "MongoDB", "career_weights": { "Backend Developer": 1 } },
+        { "text": "MySQL", "career_weights": { "Backend Developer": 1 } },
+        { "text": "Elasticsearch", "career_weights": { "Data Engineer": 2 } }
+      ],
+      "correct_answer": "RabbitMQ"
+    },
+    {
+      "id": "TQ57",
+      "question": "Which programming paradigm does JavaScript primarily follow?",
+      "options": [
+        { "text": "Functional", "career_weights": { "Frontend Developer": 2, "Full Stack Developer": 2 } },
+        { "text": "Object-Oriented", "career_weights": { "Frontend Developer": 3, "Full Stack Developer": 2 } },
+        { "text": "Procedural", "career_weights": { "Backend Developer": 1 } },
+        { "text": "Declarative only", "career_weights": { "Frontend Developer": 1 } }
+      ],
+      "correct_answer": "Object-Oriented"
+    },
+    {
+      "id": "TQ58",
+      "question": "In Big Data, what does the 'V' in the 3Vs (Volume, Velocity, Variety) NOT stand for?",
+      "options": [
+        { "text": "Volume", "career_weights": { "Data Scientist": 2 } },
+        { "text": "Velocity", "career_weights": { "Data Scientist": 2 } },
+        { "text": "Verification", "career_weights": { "Data Scientist": 3 } },
+        { "text": "Variety", "career_weights": { "Data Scientist": 2 } }
+      ],
+      "correct_answer": "Verification"
+    },
+    {
+      "id": "TQ59",
+      "question": "Which machine learning algorithm is best suited for classification problems?",
+      "options": [
+        { "text": "K-Means", "career_weights": { "AI Engineer": 1 } },
+        { "text": "Decision Tree", "career_weights": { "AI Engineer": 3, "Data Scientist": 2 } },
+        { "text": "Apriori", "career_weights": { "Data Analyst": 2 } },
+        { "text": "PageRank", "career_weights": { "Backend Developer": 1 } }
+      ],
+      "correct_answer": "Decision Tree"
+    },
+    {
+      "id": "TQ60",
+      "question": "Which of the following frameworks is most commonly used for building microservices in Java?",
+      "options": [
+        { "text": "Spring Boot", "career_weights": { "Backend Developer": 3, "Cloud Engineer": 2 } },
+        { "text": "Django", "career_weights": { "Backend Developer": 1 } },
+        { "text": "Ruby on Rails", "career_weights": { "Backend Developer": 1 } },
+        { "text": "Flask", "career_weights": { "AI Engineer": 1 } }
+      ],
+      "correct_answer": "Spring Boot"
+    },
+[
+  {
+    "id": "TQ61",
+    "question": "In microservices, which pattern is commonly used to handle service-to-service communication?",
+    "options": [
+      { "text": "Service Registry & Discovery", "career_weights": { "Cloud Engineer": 3, "Backend Developer": 2 } },
+      { "text": "Monolithic Pattern", "career_weights": { "Backend Developer": 1 } },
+      { "text": "Batch Processing", "career_weights": { "Data Engineer": 1 } },
+      { "text": "Observer Pattern", "career_weights": { "Backend Developer": 1 } }
+    ],
+    "correct_answer": "Service Registry & Discovery"
+  },
+  {
+    "id": "TQ62",
+    "question": "Which of the following is an advantage of using containerization (Docker)?",
+    "options": [
+      { "text": "Tight coupling of apps", "career_weights": { "Backend Developer": 1 } },
+      { "text": "Consistent runtime environment", "career_weights": { "Cloud Engineer": 3, "DevOps Engineer": 3 } },
+      { "text": "Higher memory consumption", "career_weights": { "Backend Developer": 1 } },
+      { "text": "Manual dependency setup", "career_weights": { "Backend Developer": 1 } }
+    ],
+    "correct_answer": "Consistent runtime environment"
+  },
+  {
+    "id": "TQ63",
+    "question": "Which algorithm is widely used for anomaly detection in network security?",
+    "options": [
+      { "text": "K-Means Clustering", "career_weights": { "AI Engineer": 2 } },
+      { "text": "Isolation Forest", "career_weights": { "Data Scientist": 3, "AI Engineer": 2 } },
+      { "text": "Apriori Algorithm", "career_weights": { "Data Analyst": 1 } },
+      { "text": "Naive Bayes", "career_weights": { "AI Engineer": 2 } }
+    ],
+    "correct_answer": "Isolation Forest"
+  },
+  {
+    "id": "TQ64",
+    "question": "Which protocol is primarily used for secure API communication?",
+    "options": [
+      { "text": "HTTP", "career_weights": { "Backend Developer": 1 } },
+      { "text": "HTTPS with TLS", "career_weights": { "Backend Developer": 3, "Cloud Engineer": 2 } },
+      { "text": "FTP", "career_weights": { "Backend Developer": 1 } },
+      { "text": "SMTP", "career_weights": { "Backend Developer": 1 } }
+    ],
+    "correct_answer": "HTTPS with TLS"
+  },
+  {
+    "id": "TQ65",
+    "question": "In deep learning, what is the vanishing gradient problem?",
+    "options": [
+      { "text": "Gradients become extremely small in deep networks", "career_weights": { "AI Engineer": 3, "Data Scientist": 2 } },
+      { "text": "Gradients explode to infinity", "career_weights": { "AI Engineer": 2 } },
+      { "text": "Loss function never decreases", "career_weights": { "AI Engineer": 2 } },
+      { "text": "Overfitting due to large datasets", "career_weights": { "AI Engineer": 1 } }
+    ],
+    "correct_answer": "Gradients become extremely small in deep networks"
+  },
+  {
+    "id": "TQ66",
+    "question": "Which of the following cloud concepts ensures applications continue running despite failures?",
+    "options": [
+      { "text": "Elasticity", "career_weights": { "Cloud Engineer": 2 } },
+      { "text": "Fault Tolerance", "career_weights": { "Cloud Engineer": 3, "Backend Developer": 2 } },
+      { "text": "Multi-tenancy", "career_weights": { "Cloud Engineer": 1 } },
+      { "text": "Load Balancing only", "career_weights": { "Cloud Engineer": 2 } }
+    ],
+    "correct_answer": "Fault Tolerance"
+  },
+  {
+    "id": "TQ67",
+    "question": "In system design, what is the purpose of a Content Delivery Network (CDN)?",
+    "options": [
+      { "text": "Store raw databases", "career_weights": { "Backend Developer": 1 } },
+      { "text": "Deliver static assets closer to users", "career_weights": { "Cloud Engineer": 3, "Frontend Developer": 2 } },
+      { "text": "Encrypt data at rest", "career_weights": { "Cloud Engineer": 1 } },
+      { "text": "Reduce SQL query time", "career_weights": { "Data Analyst": 1 } }
+    ],
+    "correct_answer": "Deliver static assets closer to users"
+  },
+  {
+    "id": "TQ68",
+    "question": "Which of these is a distributed version control system?",
+    "options": [
+      { "text": "Git", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+      { "text": "SVN", "career_weights": { "Backend Developer": 1 } },
+      { "text": "CVS", "career_weights": { "Backend Developer": 1 } },
+      { "text": "TFS", "career_weights": { "Backend Developer": 1 } }
+    ],
+    "correct_answer": "Git"
+  },
+  {
+    "id": "TQ69",
+    "question": "In Kubernetes, what is the role of a pod?",
+    "options": [
+      { "text": "It is the smallest deployable unit", "career_weights": { "Cloud Engineer": 3, "DevOps Engineer": 3 } },
+      { "text": "It is a database engine", "career_weights": { "Data Engineer": 1 } },
+      { "text": "It stores logs", "career_weights": { "Cloud Engineer": 1 } },
+      { "text": "It only manages networking", "career_weights": { "Cloud Engineer": 1 } }
+    ],
+    "correct_answer": "It is the smallest deployable unit"
+  },
+  {
+    "id": "TQ70",
+    "question": "Which database is optimized for time-series data?",
+    "options": [
+      { "text": "InfluxDB", "career_weights": { "Data Engineer": 3, "Cloud Engineer": 2 } },
+      { "text": "MongoDB", "career_weights": { "Backend Developer": 2 } },
+      { "text": "PostgreSQL", "career_weights": { "Backend Developer": 2 } },
+      { "text": "Oracle", "career_weights": { "Backend Developer": 1 } }
+    ],
+    "correct_answer": "InfluxDB"
+  }
+]
+  ]
+}

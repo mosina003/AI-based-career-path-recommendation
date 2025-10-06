@@ -1,0 +1,605 @@
+{
+  "category": "Scenario Based Questions",
+  "questions": [
+    {
+      "id": "scenario-q1",
+      "question": "Ravi, Sita, and John are sitting in a row. Ravi is to the left of Sita but to the right of John. Who is in the middle?",
+      "options": [
+        { "text": "Ravi", "career_weights": { "Data Analyst": 3, "AI Engineer": 2 } },
+        { "text": "Sita", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+        { "text": "John", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+        { "text": "Cannot be determined", "career_weights": { "AI Researcher": 3, "Data Scientist": 2 } }
+      ],
+      "answer": "Ravi",
+      "weight": 5
+    },
+    {
+      "id": "scenario-q2",
+      "question": "A farmer has 17 goats. All but 9 die. How many are left alive?",
+      "options": [
+        { "text": "8", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+        { "text": "9", "career_weights": { "Data Analyst": 3, "AI Engineer": 2 } },
+        { "text": "17", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+        { "text": "0", "career_weights": { "AI Researcher": 3, "Data Scientist": 2 } }
+      ],
+      "answer": "9",
+      "weight": 3
+    },
+    {
+      "id": "scenario-q3",
+      "question": "Five friends are sitting in a circle: A, B, C, D, E. If A is between B and C, and D is to the right of B, who is sitting opposite C?",
+      "options": [
+        { "text": "A", "career_weights": { "AI Engineer": 3, "Data Scientist": 2 } },
+        { "text": "B", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+        { "text": "D", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+        { "text": "E", "career_weights": { "Data Analyst": 3, "AI Researcher": 2 } }
+      ],
+      "answer": "E",
+      "weight": 6
+    },
+    {
+      "id": "scenario-q4",
+      "question": "If MONDAY is coded as 123456, how will SUNDAY be coded?",
+      "options": [
+        { "text": "789456", "career_weights": { "Data Analyst": 3, "AI Engineer": 2 } },
+        { "text": "567894", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+        { "text": "891456", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+        { "text": "765894", "career_weights": { "AI Researcher": 3, "Data Scientist": 2 } }
+      ],
+      "answer": "789456",
+      "weight": 7
+    },
+    {
+      "id": "scenario-q5",
+      "question": "Two trains start from the same point at the same time. One goes north at 40 km/h, another goes east at 30 km/h. After 2 hours, what is the distance between them?",
+      "options": [
+        { "text": "50 km", "career_weights": { "Data Analyst": 3, "AI Engineer": 2 } },
+        { "text": "70 km", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+        { "text": "100 km", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+        { "text": "120 km", "career_weights": { "AI Researcher": 3, "Data Scientist": 2 } }
+      ],
+      "answer": "50 km",
+      "weight": 8
+    },
+    {
+  "id": "scenario-q6",
+  "question": "In a family, A is the father of B. B is the brother of C. C is the mother of D. What is A’s relation to D?",
+  "options": [
+    { "text": "Father", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+    { "text": "Grandfather", "career_weights": { "Data Analyst": 3, "AI Engineer": 2 } },
+    { "text": "Uncle", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+    { "text": "Brother", "career_weights": { "AI Researcher": 3, "Data Scientist": 2 } }
+  ],
+  "answer": "Grandfather",
+  "weight": 5
+},
+{
+  "id": "scenario-q7",
+  "question": "If 2 pencils cost ₹10, how much do 5 pencils cost?",
+  "options": [
+    { "text": "₹20", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+    { "text": "₹25", "career_weights": { "Data Analyst": 3, "AI Engineer": 2 } },
+    { "text": "₹30", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+    { "text": "₹40", "career_weights": { "AI Researcher": 3, "Data Scientist": 2 } }
+  ],
+  "answer": "₹25",
+  "weight": 2
+},
+{
+  "id": "scenario-q8",
+  "question": "You buy a pen for ₹50 and sell it for ₹60. Later, you buy the same pen back for ₹70 and sell it again for ₹80. What is your net profit?",
+  "options": [
+    { "text": "₹10", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+    { "text": "₹20", "career_weights": { "Data Analyst": 3, "AI Engineer": 2 } },
+    { "text": "₹30", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+    { "text": "₹40", "career_weights": { "AI Researcher": 3, "Data Scientist": 2 } }
+  ],
+  "answer": "₹20",
+  "weight": 6
+},
+{
+  "id": "scenario-q9",
+  "question": "Pointing to a man, Rahul said, “He is the son of my grandfather’s only son.” How is the man related to Rahul?",
+  "options": [
+    { "text": "Brother", "career_weights": { "Data Analyst": 3, "AI Engineer": 2 } },
+    { "text": "Cousin", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+    { "text": "Father", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+    { "text": "Uncle", "career_weights": { "AI Researcher": 3, "Data Scientist": 2 } }
+  ],
+  "answer": "Brother",
+  "weight": 4
+},
+{
+  "id": "scenario-q10",
+  "question": "A clock shows 4:15. What is the angle between the hour and minute hands?",
+  "options": [
+    { "text": "37.5°", "career_weights": { "Data Analyst": 3, "AI Engineer": 2 } },
+    { "text": "45°", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+    { "text": "52.5°", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+    { "text": "60°", "career_weights": { "AI Researcher": 3, "Data Scientist": 2 } }
+  ],
+  "answer": "37.5°",
+  "weight": 9
+},
+{
+  "id": "scenario-q11",
+  "question": "In a class, 60% of students are boys. If there are 30 girls, how many total students are there?",
+  "options": [
+    { "text": "50", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+    { "text": "60", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+    { "text": "70", "career_weights": { "AI Researcher": 3, "Data Scientist": 2 } },
+    { "text": "75", "career_weights": { "Data Analyst": 3, "AI Engineer": 2 } }
+  ],
+  "answer": "75",
+  "weight": 6
+},
+{
+  "id": "scenario-q12",
+  "question": "Rahul is taller than Anil but shorter than Suresh. Anil is taller than Deepak. Who is the shortest?",
+  "options": [
+    { "text": "Rahul", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+    { "text": "Anil", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+    { "text": "Suresh", "career_weights": { "AI Researcher": 3, "Data Scientist": 2 } },
+    { "text": "Deepak", "career_weights": { "Data Analyst": 3, "AI Engineer": 2 } }
+  ],
+  "answer": "Deepak",
+  "weight": 4
+},
+{
+  "id": "scenario-q13",
+  "question": "If 3 typists can type 3 pages in 3 minutes, how many pages can 6 typists type in 6 minutes?",
+  "options": [
+    { "text": "6", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+    { "text": "9", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+    { "text": "12", "career_weights": { "Data Analyst": 3, "AI Engineer": 2 } },
+    { "text": "18", "career_weights": { "AI Researcher": 3, "Data Scientist": 2 } }
+  ],
+  "answer": "12",
+  "weight": 5
+},
+{
+  "id": "scenario-q14",
+  "question": "Two numbers add up to 50. Their difference is 6. What are the numbers?",
+  "options": [
+    { "text": "28 and 22", "career_weights": { "Data Analyst": 3, "AI Engineer": 2 } },
+    { "text": "27 and 23", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+    { "text": "26 and 24", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+    { "text": "29 and 21", "career_weights": { "AI Researcher": 3, "Data Scientist": 2 } }
+  ],
+  "answer": "28 and 22",
+  "weight": 7
+},
+{
+  "id": "scenario-q15",
+  "question": "Which day will it be 100 days after 15th August if 15th August is a Monday?",
+  "options": [
+    { "text": "Tuesday", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+    { "text": "Wednesday", "career_weights": { "Data Analyst": 3, "AI Engineer": 2 } },
+    { "text": "Thursday", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+    { "text": "Friday", "career_weights": { "AI Researcher": 3, "Data Scientist": 2 } }
+  ],
+  "answer": "Wednesday",
+  "weight": 8
+},
+{
+  "id": "scenario-q16",
+  "question": "A shopkeeper bought a shirt for ₹500 and sold it at a loss of 10%. What is the selling price?",
+  "options": [
+    { "text": "₹450", "career_weights": { "Data Analyst": 3, "AI Engineer": 2 } },
+    { "text": "₹460", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+    { "text": "₹470", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+    { "text": "₹480", "career_weights": { "AI Researcher": 3, "Data Scientist": 2 } }
+  ],
+  "answer": "₹450",
+  "weight": 3
+},
+{
+  "id": "scenario-q17",
+  "question": "The average age of 4 friends is 20. If a new friend joins, the average becomes 22. What is the age of the new friend?",
+  "options": [
+    { "text": "28", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+    { "text": "30", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+    { "text": "32", "career_weights": { "Data Analyst": 3, "AI Engineer": 2 } },
+    { "text": "34", "career_weights": { "AI Researcher": 3, "Data Scientist": 2 } }
+  ],
+  "answer": "32",
+  "weight": 7
+},
+{
+  "id": "scenario-q18",
+  "question": "One tap can fill a tank in 6 hours, another can empty it in 9 hours. If both are opened together, how long will it take to fill the tank?",
+  "options": [
+    { "text": "12 hours", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+    { "text": "15 hours", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+    { "text": "18 hours", "career_weights": { "Data Analyst": 3, "AI Engineer": 2 } },
+    { "text": "24 hours", "career_weights": { "AI Researcher": 3, "Data Scientist": 2 } }
+  ],
+  "answer": "18 hours",
+  "weight": 6
+},
+{
+  "id": "scenario-q19",
+  "question": "If in a certain code, CAT = DBU, what does DOG equal?",
+  "options": [
+    { "text": "DPE", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+    { "text": "EPI", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+    { "text": "EPH", "career_weights": { "Data Analyst": 3, "AI Engineer": 2 } },
+    { "text": "EQH", "career_weights": { "AI Researcher": 3, "Data Scientist": 2 } }
+  ],
+  "answer": "EPH",
+  "weight": 5
+},
+{
+  "id": "scenario-q20",
+  "question": "Arun’s father is Bimal. Chitra is Bimal’s sister. Deepa is Chitra’s daughter. How is Deepa related to Arun?",
+  "options": [
+    { "text": "Sister", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+    { "text": "Cousin", "career_weights": { "Data Analyst": 3, "AI Engineer": 2 } },
+    { "text": "Aunt", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+    { "text": "Niece", "career_weights": { "AI Researcher": 3, "Data Scientist": 2 } }
+  ],
+  "answer": "Cousin",
+  "weight": 4
+},
+{
+  "id": "scenario-q21",
+  "question": "A train 120 m long crosses a pole in 6 seconds. What is the speed of the train?",
+  "options": [
+    { "text": "60 km/h", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+    { "text": "72 km/h", "career_weights": { "Data Analyst": 3, "AI Engineer": 2 } },
+    { "text": "80 km/h", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+    { "text": "90 km/h", "career_weights": { "AI Researcher": 3, "Data Scientist": 2 } }
+  ],
+  "answer": "72 km/h",
+  "weight": 7
+},
+{
+  "id": "scenario-q22",
+  "question": "In a group of 100 people, 72 like tea, 43 like coffee, and 10 like neither. How many like both?",
+  "options": [
+    { "text": "15", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+    { "text": "20", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+    { "text": "25", "career_weights": { "Data Analyst": 3, "AI Engineer": 2 } },
+    { "text": "30", "career_weights": { "AI Researcher": 3, "Data Scientist": 2 } }
+  ],
+  "answer": "25",
+  "weight": 8
+},
+{
+  "id": "scenario-q23",
+  "question": "Find the missing number: 2, 6, 12, 20, ?, 42.",
+  "options": [
+    { "text": "28", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+    { "text": "30", "career_weights": { "Data Analyst": 3, "AI Engineer": 2 } },
+    { "text": "32", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+    { "text": "34", "career_weights": { "AI Researcher": 3, "Data Scientist": 2 } }
+  ],
+  "answer": "30",
+  "weight": 6
+},
+{
+  "id": "scenario-q24",
+  "question": "The ages of A and B are in the ratio 3:5. If their sum is 64, what are their ages?",
+  "options": [
+    { "text": "24 and 40", "career_weights": { "Data Analyst": 3, "AI Engineer": 2 } },
+    { "text": "18 and 46", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+    { "text": "20 and 44", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+    { "text": "22 and 42", "career_weights": { "AI Researcher": 3, "Data Scientist": 2 } }
+  ],
+  "answer": "24 and 40",
+  "weight": 5
+},
+{
+  "id": "scenario-q25",
+  "question": "In a certain code, BOOK = 47 and PEN = 35. What is the code for PAPER?",
+  "options": [
+    { "text": "55", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+    { "text": "57", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+    { "text": "59", "career_weights": { "Data Analyst": 3, "AI Engineer": 2 } },
+    { "text": "61", "career_weights": { "AI Researcher": 3, "Data Scientist": 2 } }
+  ],
+  "answer": "59",
+  "weight": 7
+},
+{
+  "id": "scenario-q26",
+  "question": "Two dice are rolled. What is the probability of getting a sum of 8?",
+  "options": [
+    { "text": "5/36", "career_weights": { "Data Analyst": 3, "AI Engineer": 2 } },
+    { "text": "6/36", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+    { "text": "4/36", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+    { "text": "7/36", "career_weights": { "AI Researcher": 3, "Data Scientist": 2 } }
+  ],
+  "answer": "5/36",
+  "weight": 9
+},
+{
+  "id": "scenario-q27",
+  "question": "If South-East becomes North, then what will North-East become?",
+  "options": [
+    { "text": "West", "career_weights": { "Data Analyst": 3, "AI Engineer": 2 } },
+    { "text": "South", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+    { "text": "East", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+    { "text": "South-West", "career_weights": { "AI Researcher": 3, "Data Scientist": 2 } }
+  ],
+  "answer": "West",
+  "weight": 8
+},
+{
+  "id": "scenario-q28",
+  "question": "A boat goes 12 km downstream in 3 hours and returns the same distance upstream in 4 hours. What is the speed of the boat in still water?",
+  "options": [
+    { "text": "3.5 km/h", "career_weights": { "Data Analyst": 3, "AI Engineer": 2 } },
+    { "text": "4 km/h", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+    { "text": "4.5 km/h", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+    { "text": "5 km/h", "career_weights": { "AI Researcher": 3, "Data Scientist": 2 } }
+  ],
+  "answer": "3.5 km/h",
+  "weight": 6
+},
+{
+  "id": "scenario-q29",
+  "question": "Rearrange the letters of 'CIFAIPC' to form a meaningful word.",
+  "options": [
+    { "text": "Pacific", "career_weights": { "Data Analyst": 3, "AI Engineer": 2 } },
+    { "text": "Specific", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+    { "text": "Traffic", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+    { "text": "Picafic", "career_weights": { "AI Researcher": 3, "Data Scientist": 2 } }
+  ],
+  "answer": "Pacific",
+  "weight": 3
+},
+{
+  "id": "scenario-q30",
+  "question": "Pointing to a lady, Ramesh said, 'She is my mother’s only son’s wife.' How is the lady related to Ramesh?",
+  "options": [
+    { "text": "Wife", "career_weights": { "Data Analyst": 3, "AI Engineer": 2 } },
+    { "text": "Mother", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+    { "text": "Sister", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+    { "text": "Sister-in-law", "career_weights": { "AI Researcher": 3, "Data Scientist": 2 } }
+  ],
+  "answer": "Wife",
+  "weight": 5
+},
+{
+  "id": "scenario-q31",
+  "question": "If SELL is coded as 4666 and COST is coded as 3978, what will POST be coded as?",
+  "options": [
+    { "text": "5678", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+    { "text": "4978", "career_weights": { "Data Analyst": 3, "AI Engineer": 2 } },
+    { "text": "5978", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+    { "text": "5878", "career_weights": { "AI Researcher": 3, "Data Scientist": 2 } }
+  ],
+  "answer": "4978",
+  "weight": 6
+},
+{
+  "id": "scenario-q32",
+  "question": "A man walks 3 km north, then 4 km east. What is the shortest distance from his starting point?",
+  "options": [
+    { "text": "5 km", "career_weights": { "Data Analyst": 3, "AI Engineer": 2 } },
+    { "text": "6 km", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+    { "text": "7 km", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+    { "text": "4 km", "career_weights": { "AI Researcher": 3, "Data Scientist": 2 } }
+  ],
+  "answer": "5 km",
+  "weight": 5
+},
+{
+  "id": "scenario-q33",
+  "question": "The sum of three consecutive odd numbers is 99. What is the largest number?",
+  "options": [
+    { "text": "31", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+    { "text": "33", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+    { "text": "35", "career_weights": { "Data Analyst": 3, "AI Engineer": 2 } },
+    { "text": "37", "career_weights": { "AI Researcher": 3, "Data Scientist": 2 } }
+  ],
+  "answer": "35",
+  "weight": 4
+},
+{
+  "id": "scenario-q34",
+  "question": "If it is 9:15 now, what will be the angle between the hour and minute hands of the clock?",
+  "options": [
+    { "text": "7.5°", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+    { "text": "15°", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+    { "text": "22.5°", "career_weights": { "Data Analyst": 3, "AI Engineer": 2 } },
+    { "text": "30°", "career_weights": { "AI Researcher": 3, "Data Scientist": 2 } }
+  ],
+  "answer": "22.5°",
+  "weight": 7
+},
+{
+  "id": "scenario-q35",
+  "question": "Two brothers, A and B, start a business. A invests ₹12,000 and B invests ₹18,000. At the end of the year, they earn a profit of ₹20,000. How much does A get?",
+  "options": [
+    { "text": "₹6,000", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+    { "text": "₹8,000", "career_weights": { "Data Analyst": 3, "AI Engineer": 2 } },
+    { "text": "₹10,000", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+    { "text": "₹12,000", "career_weights": { "AI Researcher": 3, "Data Scientist": 2 } }
+  ],
+  "answer": "₹8,000",
+  "weight": 6
+},
+{
+  "id": "scenario-q36",
+  "question": "If RAM = 27 and SUN = 54 in a certain code, what is the value of MOON?",
+  "options": [
+    { "text": "57", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+    { "text": "63", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+    { "text": "72", "career_weights": { "Data Analyst": 3, "AI Engineer": 2 } },
+    { "text": "81", "career_weights": { "AI Researcher": 3, "Data Scientist": 2 } }
+  ],
+  "answer": "72",
+  "weight": 8
+},
+{
+  "id": "scenario-q37",
+  "question": "In a row of boys, Ravi is 7th from the left and 12th from the right. How many boys are there in total?",
+  "options": [
+    { "text": "17", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+    { "text": "18", "career_weights": { "Data Analyst": 3, "AI Engineer": 2 } },
+    { "text": "19", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+    { "text": "20", "career_weights": { "AI Researcher": 3, "Data Scientist": 2 } }
+  ],
+  "answer": "18",
+  "weight": 5
+},
+{
+  "id": "scenario-q38",
+  "question": "If A + B means A is the brother of B, A - B means A is the mother of B, A × B means A is the father of B, then what does P × Q - R mean?",
+  "options": [
+    { "text": "P is father of R", "career_weights": { "Data Analyst": 3, "AI Engineer": 2 } },
+    { "text": "P is brother of R", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+    { "text": "Q is mother of R", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+    { "text": "R is father of Q", "career_weights": { "AI Researcher": 3, "Data Scientist": 2 } }
+  ],
+  "answer": "P is father of R",
+  "weight": 9
+},
+{
+  "id": "scenario-q39",
+  "question": "A car covers 180 km in 3 hours and another 120 km in 2 hours. What is the average speed?",
+  "options": [
+    { "text": "55 km/h", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+    { "text": "60 km/h", "career_weights": { "Data Analyst": 3, "AI Engineer": 2 } },
+    { "text": "65 km/h", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+    { "text": "62 km/h", "career_weights": { "AI Researcher": 3, "Data Scientist": 2 } }
+  ],
+  "answer": "60 km/h",
+  "weight": 4
+},
+{
+  "id": "scenario-q40",
+  "question": "Find the odd one out: 36, 49, 64, 81, 121.",
+  "options": [
+    { "text": "36", "career_weights": { "Data Analyst": 3, "AI Engineer": 2 } },
+    { "text": "49", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+    { "text": "64", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+    { "text": "121", "career_weights": { "AI Researcher": 3, "Data Scientist": 2 } }
+  ],
+  "answer": "36",
+  "weight": 3
+},
+{
+  "id": "scenario-q41",
+  "question": "A train 150 m long passes a platform of 100 m in 10 seconds. What is the speed of the train?",
+  "options": [
+    { "text": "45 km/h", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+    { "text": "54 km/h", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+    { "text": "90 km/h", "career_weights": { "Data Analyst": 3, "AI Engineer": 2 } },
+    { "text": "93 km/h", "career_weights": { "AI Researcher": 3, "Data Scientist": 2 } }
+  ],
+  "answer": "90 km/h",
+  "weight": 6
+},
+{
+  "id": "scenario-q42",
+  "question": "If 7 people can paint a wall in 8 days, how many days will 14 people take to paint the same wall?",
+  "options": [
+    { "text": "2 days", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+    { "text": "4 days", "career_weights": { "Data Analyst": 3, "AI Engineer": 2 } },
+    { "text": "8 days", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+    { "text": "16 days", "career_weights": { "AI Researcher": 3, "Data Scientist": 2 } }
+  ],
+  "answer": "4 days",
+  "weight": 5
+},
+{
+  "id": "scenario-q43",
+  "question": "Find the missing number: 3, 9, 27, ?, 243",
+  "options": [
+    { "text": "54", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+    { "text": "72", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+    { "text": "81", "career_weights": { "Data Analyst": 3, "AI Engineer": 2 } },
+    { "text": "90", "career_weights": { "AI Researcher": 3, "Data Scientist": 2 } }
+  ],
+  "answer": "81",
+  "weight": 4
+},
+{
+  "id": "scenario-q44",
+  "question": "The sum of the digits of a two-digit number is 12. If the digits are reversed, the number increases by 18. Find the original number.",
+  "options": [
+    { "text": "48", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+    { "text": "57", "career_weights": { "Data Analyst": 3, "AI Engineer": 2 } },
+    { "text": "66", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+    { "text": "69", "career_weights": { "AI Researcher": 3, "Data Scientist": 2 } }
+  ],
+  "answer": "57",
+  "weight": 7
+},
+{
+  "id": "scenario-q45",
+  "question": "If A + B means A is the sister of B, A × B means A is the father of B, A - B means A is the mother of B, then what does X × Y + Z mean?",
+  "options": [
+    { "text": "X is uncle of Z", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+    { "text": "X is father of Z", "career_weights": { "Data Analyst": 3, "AI Engineer": 2 } },
+    { "text": "Y is mother of Z", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+    { "text": "Z is sister of X", "career_weights": { "AI Researcher": 3, "Data Scientist": 2 } }
+  ],
+  "answer": "X is father of Z",
+  "weight": 9
+},
+{
+  "id": "scenario-q46",
+  "question": "A man’s present age is 5 times his son’s age. 5 years ago, the man was 9 times as old as his son. What is the son’s present age?",
+  "options": [
+    { "text": "5 years", "career_weights": { "Data Analyst": 3, "AI Engineer": 2 } },
+    { "text": "6 years", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+    { "text": "7 years", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+    { "text": "8 years", "career_weights": { "AI Researcher": 3, "Data Scientist": 2 } }
+  ],
+  "answer": "5 years",
+  "weight": 6
+},
+{
+  "id": "scenario-q47",
+  "question": "Pointing to a man, she says, 'He is the father of my mother’s only son.' How is the man related to her?",
+  "options": [
+    { "text": "Father", "career_weights": { "Data Analyst": 3, "AI Engineer": 2 } },
+    { "text": "Grandfather", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+    { "text": "Uncle", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+    { "text": "Brother", "career_weights": { "AI Researcher": 3, "Data Scientist": 2 } }
+  ],
+  "answer": "Father",
+  "weight": 4
+},
+{
+  "id": "scenario-q48",
+  "question": "A boat goes 15 km downstream in 3 hours and returns upstream in 5 hours. Find the speed of the stream.",
+  "options": [
+    { "text": "1 km/h", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+    { "text": "1.5 km/h", "career_weights": { "Data Analyst": 3, "AI Engineer": 2 } },
+    { "text": "2 km/h", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+    { "text": "2.5 km/h", "career_weights": { "AI Researcher": 3, "Data Scientist": 2 } }
+  ],
+  "answer": "1.5 km/h",
+  "weight": 7
+},
+{
+  "id": "scenario-q49",
+  "question": "Which of the following numbers does not belong to the series: 5, 10, 20, 40, 75, 80?",
+  "options": [
+    { "text": "40", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+    { "text": "75", "career_weights": { "Data Analyst": 3, "AI Engineer": 2 } },
+    { "text": "80", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+    { "text": "20", "career_weights": { "AI Researcher": 3, "Data Scientist": 2 } }
+  ],
+  "answer": "75",
+  "weight": 3
+},
+{
+  "id": "scenario-q50",
+  "question": "A bag contains 5 red, 6 blue, and 9 green balls. One ball is drawn at random. What is the probability that it is not blue?",
+  "options": [
+    { "text": "1/3", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 2 } },
+    { "text": "1/2", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+    { "text": "5/7", "career_weights": { "Data Analyst": 3, "AI Engineer": 2 } },
+    { "text": "2/3", "career_weights": { "AI Researcher": 3, "Data Scientist": 2 } }
+  ],
+  "answer": "5/7",
+  "weight": 8
+}
+  ]
+}

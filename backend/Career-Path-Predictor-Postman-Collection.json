@@ -1,0 +1,232 @@
+{
+  "info": {
+    "name": "Career Path Predictor - Password Authentication",
+    "description": "Complete API collection for testing student registration, login, and career prediction",
+    "version": "1.0.0"
+  },
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:8080"
+    },
+    {
+      "key": "jwt_token",
+      "value": "",
+      "description": "JWT token obtained from login"
+    }
+  ],
+  "item": [
+    {
+      "name": "Authentication",
+      "item": [
+        {
+          "name": "Student Registration",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Mosina\",\n  \"email\": \"mosina@example.com\",\n  \"password\": \"MyStrongPass123\",\n  \"age\": 21,\n  \"skills\": \"Java, SQL, Data Analysis\",\n  \"grades\": \"A\",\n  \"interests\": \"AI, Web Development\",\n  \"personalityScores\": {\n    \"Openness\": 0.8,\n    \"Conscientiousness\": 0.7,\n    \"Extroversion\": 0.6,\n    \"Agreeableness\": 0.9,\n    \"Neuroticism\": 0.3\n  }\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/students/register",
+              "host": ["{{base_url}}"],
+              "path": ["api", "students", "register"]
+            }
+          }
+        },
+        {
+          "name": "Student Login",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"username\": \"mosina@example.com\",\n  \"password\": \"MyStrongPass123\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/auth/student/login",
+              "host": ["{{base_url}}"],
+              "path": ["api", "auth", "student", "login"]
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "if (pm.response.code === 200) {",
+                  "    const response = pm.response.json();",
+                  "    pm.collectionVariables.set('jwt_token', response.token);",
+                  "    console.log('JWT Token saved:', response.token);",
+                  "}"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Career Prediction",
+      "item": [
+        {
+          "name": "Manual Skills Prediction",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{jwt_token}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Test Student\",\n  \"skills\": \"Python, Machine Learning, Data Analysis, Statistics\",\n  \"interests\": \"Data Science, AI Research, Analytics\",\n  \"personalityScores\": {\n    \"analytical\": 0.95,\n    \"creative\": 0.75,\n    \"technical\": 0.90\n  }\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/students/predict/manual",
+              "host": ["{{base_url}}"],
+              "path": ["api", "students", "predict", "manual"]
+            }
+          }
+        },
+        {
+          "name": "Quiz-Based Prediction",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{jwt_token}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"0\": \"Python\",\n  \"1\": \"Machine Learning\",\n  \"2\": \"Data Analysis\",\n  \"3\": \"Statistics\",\n  \"4\": \"Deep Learning\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/students/1/predict/quiz",
+              "host": ["{{base_url}}"],
+              "path": ["api", "students", "1", "predict", "quiz"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Quiz Management",
+      "item": [
+        {
+          "name": "Get Quiz Questions",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{jwt_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/quiz/getQuestions?category=techquiz&count=5",
+              "host": ["{{base_url}}"],
+              "path": ["api", "quiz", "getQuestions"],
+              "query": [
+                {
+                  "key": "category",
+                  "value": "techquiz"
+                },
+                {
+                  "key": "count",
+                  "value": "5"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Submit Quiz Answers",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{jwt_token}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"studentId\": 1,\n  \"category\": \"techquiz\",\n  \"answers\": {\n    \"0\": \"Java\",\n    \"1\": \"Python\",\n    \"2\": \"React\"\n  }\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/quiz/submit",
+              "host": ["{{base_url}}"],
+              "path": ["api", "quiz", "submit"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Student Management",
+      "item": [
+        {
+          "name": "Get All Students",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{jwt_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/students",
+              "host": ["{{base_url}}"],
+              "path": ["api", "students"]
+            }
+          }
+        },
+        {
+          "name": "Get Student By ID",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{jwt_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/students/1",
+              "host": ["{{base_url}}"],
+              "path": ["api", "students", "1"]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,740 @@
+{
+  "category": "codechallenge",
+  "questions": [
+    {
+      "id": "cc-q1",
+      "question": "What is the output of the following Java code?\n\nint x = 5;\nSystem.out.println(x++ + ++x);",
+      "options": [
+        { "text": "11", "career_weights": { "Business Analyst": 2, "Project Manager": 2, "Data Analyst": 1 } },
+        { "text": "12", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 3, "AI Engineer": 2, "Data Scientist": 2 } },
+        { "text": "10", "career_weights": { "Data Analyst": 2, "Business Analyst": 2 } },
+        { "text": "Error", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+      ],
+      "correct_answer": "12",
+      "weight": 7
+    },
+    {
+      "id": "cc-q2",
+      "question": "What is the output of the following code?\n\nint[] arr = {1,2,3,4};\nSystem.out.println(arr[4]);",
+      "options": [
+        { "text": "4", "career_weights": { "Business Analyst": 2, "Data Analyst": 2 } },
+        { "text": "ArrayIndexOutOfBoundsException", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 3, "AI Engineer": 2 } },
+        { "text": "0", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+        { "text": "Compilation Error", "career_weights": { "Business Analyst": 2, "Project Manager": 2 } }
+      ],
+      "correct_answer": "ArrayIndexOutOfBoundsException",
+      "weight": 6
+    },
+    {
+      "id": "cc-q3",
+      "question": "What is the output of the following code?\n\nint a = 10, b = 20;\nSystem.out.println(a > b ? a : b);",
+      "options": [
+        { "text": "10", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+        { "text": "20", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 3, "AI Engineer": 2, "Data Scientist": 2 } },
+        { "text": "true", "career_weights": { "Business Analyst": 2, "Data Analyst": 2 } },
+        { "text": "false", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+      ],
+      "correct_answer": "20",
+      "weight": 6
+    },
+    {
+      "id": "cc-q4",
+      "question": "What will be the output?\n\nfor(int i=0;i<5;i++) {\n  if(i==3) break;\n  System.out.print(i);\n}",
+      "options": [
+        { "text": "0123", "career_weights": { "Data Analyst": 2, "Business Analyst": 2 } },
+        { "text": "012", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 3, "AI Engineer": 2 } },
+        { "text": "123", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+        { "text": "01234", "career_weights": { "Business Analyst": 2, "Data Analyst": 2 } }
+      ],
+      "correct_answer": "012",
+      "weight": 7
+    },
+    {
+      "id": "cc-q5",
+      "question": "Identify the error in the following code snippet:\n\nint x = 5;\nif(x = 10) {\n  System.out.println(x);\n}",
+      "options": [
+        { "text": "Compilation error due to assignment in if condition", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 3, "AI Engineer": 2 } },
+        { "text": "Prints 10", "career_weights": { "Data Analyst": 2, "Business Analyst": 2 } },
+        { "text": "Prints 5", "career_weights": { "Business Analyst": 2, "Project Manager": 2 } },
+        { "text": "Runtime exception", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+      ],
+      "correct_answer": "Compilation error due to assignment in if condition",
+      "weight": 6
+    },
+    {
+      "id": "cc-q6",
+      "question": "What is the output of the following Java code?\n\nString s1 = \"Java\";\nString s2 = new String(\"Java\");\nSystem.out.println(s1 == s2);",
+      "options": [
+        { "text": "true", "career_weights": { "Business Analyst": 2, "Project Manager": 2 } },
+        { "text": "false", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 3, "Data Scientist": 2 } },
+        { "text": "Compilation error", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+        { "text": "Runtime exception", "career_weights": { "Data Analyst": 2, "Project Manager": 2 } }
+      ],
+      "correct_answer": "false",
+      "weight": 6
+    },
+    {
+      "id": "cc-q7",
+      "question": "What will be the output?\n\nint x = 0;\nwhile(x++ < 3) {\n  System.out.print(x);\n}",
+      "options": [
+        { "text": "0123", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+        { "text": "123", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 3, "AI Engineer": 2 } },
+        { "text": "1234", "career_weights": { "Business Analyst": 2, "Data Analyst": 2 } },
+        { "text": "034", "career_weights": { "Business Analyst": 2, "Project Manager": 2 } }
+      ],
+      "correct_answer": "123",
+      "weight": 7
+    },
+    {
+      "id": "cc-q8",
+      "question": "Identify the output:\n\nint a = 5;\nint b = 2;\nSystem.out.println(a/b);",
+      "options": [
+        { "text": "2", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 3, "AI Engineer": 2 } },
+        { "text": "2.5", "career_weights": { "Business Analyst": 2, "Data Analyst": 2 } },
+        { "text": "Error", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+        { "text": "0", "career_weights": { "Data Analyst": 2, "Business Analyst": 2 } }
+      ],
+      "correct_answer": "2",
+      "weight": 5
+    },
+    {
+      "id": "cc-q9",
+      "question": "What is the output of this code?\n\nint[] arr = {1,2,3};\nfor(int i=0;i<arr.length;i++) {\n  arr[i] = arr[i]*2;\n}\nSystem.out.println(arr[1]);",
+      "options": [
+        { "text": "2", "career_weights": { "Business Analyst": 2, "Data Analyst": 2 } },
+        { "text": "4", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 3, "AI Engineer": 2 } },
+        { "text": "3", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+        { "text": "Error", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+      ],
+      "correct_answer": "4",
+      "weight": 6
+    },
+    {
+      "id": "cc-q10",
+      "question": "Find the error in the following code:\n\nfor(int i=0;i<5;i++)\nSystem.out.println(i)\n}",
+      "options": [
+        { "text": "Missing semicolon after System.out.println(i)", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 3, "AI Engineer": 2 } },
+        { "text": "Extra closing brace", "career_weights": { "Data Analyst": 2, "Business Analyst": 2 } },
+        { "text": "Compilation error due to loop", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+        { "text": "No error, code runs fine", "career_weights": { "Business Analyst": 2, "Project Manager": 2 } }
+      ],
+      "correct_answer": "Missing semicolon after System.out.println(i)",
+      "weight": 6
+    },
+    {
+      "id": "cc-q11",
+      "question": "What is the output of the following code?\n\nint x = 3;\nint y = x++ + ++x;\nSystem.out.println(y);",
+      "options": [
+        { "text": "7", "career_weights": { "Business Analyst": 2, "Data Analyst": 2 } },
+        { "text": "8", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 3, "AI Researcher": 2 } },
+        { "text": "6", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+        { "text": "Error", "career_weights": { "Business Analyst": 2, "Project Manager": 2 } }
+      ],
+      "correct_answer": "8",
+      "weight": 7
+    },
+    {
+      "id": "cc-q12",
+      "question": "What will be printed?\n\nString s = \"hello\";\nSystem.out.println(s.charAt(1));",
+      "options": [
+        { "text": "h", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+        { "text": "e", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 3, "AI Engineer": 2 } },
+        { "text": "l", "career_weights": { "Data Analyst": 2, "Business Analyst": 2 } },
+        { "text": "o", "career_weights": { "Business Analyst": 2, "Project Manager": 2 } }
+      ],
+      "correct_answer": "e",
+      "weight": 5
+    },
+    {
+      "id": "cc-q13",
+      "question": "What is the output?\n\nint[] arr = {1,2,3,4};\nfor(int i=0;i<4;i++) {\n  if(i%2==0) continue;\n  System.out.print(arr[i]);\n}",
+      "options": [
+        { "text": "1234", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+        { "text": "24", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 3, "AI Engineer": 2 } },
+        { "text": "13", "career_weights": { "Data Analyst": 2, "Business Analyst": 2 } },
+        { "text": "12", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+      ],
+      "correct_answer": "24",
+      "weight": 7
+    },
+    {
+      "id": "cc-q14",
+      "question": "Find the error in this code snippet:\n\nString str;\nSystem.out.println(str);",
+      "options": [
+        { "text": "Variable str might not have been initialized", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 3, "AI Engineer": 2 } },
+        { "text": "Compilation error due to missing semicolon", "career_weights": { "Business Analyst": 2, "Data Analyst": 2 } },
+        { "text": "Prints null", "career_weights": { "Business Analyst": 2, "Project Manager": 2 } },
+        { "text": "Runtime exception", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+      ],
+      "correct_answer": "Variable str might not have been initialized",
+      "weight": 6
+    },
+    {
+      "id": "cc-q15",
+      "question": "What is the output of the following code?\n\nint a = 5;\nint b = 2;\nSystem.out.println(a%b);",
+      "options": [
+        { "text": "2", "career_weights": { "Data Analyst": 2, "Business Analyst": 2 } },
+        { "text": "2.5", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+        { "text": "1", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 3, "AI Engineer": 2 } },
+        { "text": "0", "career_weights": { "Project Manager": 2, "Business Analyst": 2 } }
+      ],
+      "correct_answer": "1",
+      "weight": 5
+    },
+    {
+      "id": "cc-q16",
+      "question": "What will be printed?\n\nfor(int i=1;i<=3;i++) {\n  for(int j=1;j<=i;j++) {\n    System.out.print(j);\n  }\n}",
+      "options": [
+        { "text": "123", "career_weights": { "Business Analyst": 2, "Project Manager": 3 } },
+        { "text": "112123", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+        { "text": "1 12 123", "career_weights": { "Data Analyst": 3, "Business Analyst": 2 } },
+        { "text": "Error", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+      ],
+      "correct_answer": "112123",
+      "weight": 7
+    },
+    {
+      "id": "cc-q17",
+      "question": "Identify the error in the code:\n\nint x = 10;\nif(x > 5)\n  int y = x*2;\nSystem.out.println(y);",
+      "options": [
+        { "text": "Variable y cannot be declared inside if without braces", "career_weights": { "Backend Developer": 3, "AI Engineer": 2 } },
+        { "text": "No error, prints 20", "career_weights": { "Business Analyst": 3, "Project Manager": 2 } },
+        { "text": "Runtime error", "career_weights": { "Data Analyst": 3, "Business Analyst": 2 } },
+        { "text": "Compilation error due to missing semicolon", "career_weights": { "Business Analyst": 2, "Project Manager": 3 } }
+      ],
+      "correct_answer": "Variable y cannot be declared inside if without braces",
+      "weight": 7
+    },
+    {
+      "id": "cc-q18",
+      "question": "What is the output of the following code?\n\nboolean b = true;\nSystem.out.println(!b);",
+      "options": [
+        { "text": "true", "career_weights": { "Business Analyst": 3, "Data Analyst": 2 } },
+        { "text": "false", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+        { "text": "1", "career_weights": { "Business Analyst": 3, "Project Manager": 2 } },
+        { "text": "0", "career_weights": { "Data Analyst": 3, "Business Analyst": 2 } }
+      ],
+      "correct_answer": "false",
+      "weight": 6
+    },
+    {
+      "id": "cc-q19",
+      "question": "What will be printed?\n\nint x = 1;\nint y = x++ + x++ + ++x;\nSystem.out.println(y);",
+      "options": [
+        { "text": "6", "career_weights": { "AI Engineer": 3, "Backend Developer": 2 } },
+        { "text": "7", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+        { "text": "5", "career_weights": { "Data Analyst": 3, "Business Analyst": 2 } },
+        { "text": "Error", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+      ],
+      "correct_answer": "7",
+      "weight": 7
+    },
+    {
+      "id": "cc-q20",
+      "question": "Identify the output:\n\nint[] arr = {1,2,3};\nfor(int i=0;i<arr.length;i++) {\n  arr[i] += 2;\n}\nSystem.out.println(arr[0] + \",\" + arr[2]);",
+      "options": [
+        { "text": "3,5", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+        { "text": "1,3", "career_weights": { "Data Analyst": 3, "Business Analyst": 2 } },
+        { "text": "3,3", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+        { "text": "Error", "career_weights": { "Business Analyst": 3, "Project Manager": 2 } }
+      ],
+      "correct_answer": "3,5",
+      "weight": 7
+    },
+    {
+      "id": "cc-q21",
+      "question": "What will be the output?\n\nString s = \"Java\";\nSystem.out.println(s.length() + s.charAt(0));",
+      "options": [
+        { "text": "4J", "career_weights": { "AI Engineer": 3, "Full Stack Developer": 2 } },
+        { "text": "J4", "career_weights": { "Data Analyst": 3, "Business Analyst": 2 } },
+        { "text": "Error", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+        { "text": "Java", "career_weights": { "Business Analyst": 3, "Project Manager": 2 } }
+      ],
+      "correct_answer": "4J",
+      "weight": 7
+    },
+    {
+      "id": "cc-q22",
+      "question": "Identify the output:\n\nint a = 10;\nint b = 20;\na += b -= a;\nSystem.out.println(a + \",\" + b);",
+      "options": [
+        { "text": "20,10", "career_weights": { "Backend Developer": 3, "AI Researcher": 2 } },
+        { "text": "30,10", "career_weights": { "Data Analyst": 3, "Business Analyst": 2 } },
+        { "text": "10,20", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+        { "text": "Compilation Error", "career_weights": { "Business Analyst": 3, "Project Manager": 2 } }
+      ],
+      "correct_answer": "20,10",
+      "weight": 7
+    },
+    {
+      "id": "cc-q23",
+      "question": "What will be printed?\n\nint x = 1;\nif(x == 1)\n  if(x < 2)\n    System.out.println(\"A\");\n  else\n    System.out.println(\"B\");",
+      "options": [
+        { "text": "A", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+        { "text": "B", "career_weights": { "Data Analyst": 3, "Business Analyst": 2 } },
+        { "text": "Compilation Error", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+        { "text": "None", "career_weights": { "Business Analyst": 3, "Project Manager": 2 } }
+      ],
+      "correct_answer": "A",
+      "weight": 6
+    },
+    {
+      "id": "cc-q24",
+      "question": "What is the output?\n\nint[] arr = {1,2,3,4};\nfor(int i=0;i<arr.length;i+=2) {\n  System.out.print(arr[i]);\n}",
+      "options": [
+        { "text": "13", "career_weights": { "Full Stack Developer": 3, "AI Engineer": 2 } },
+        { "text": "24", "career_weights": { "Data Analyst": 3, "Business Analyst": 2 } },
+        { "text": "1234", "career_weights": { "Business Analyst": 3, "Project Manager": 2 } },
+        { "text": "12", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+      ],
+      "correct_answer": "13",
+      "weight": 7
+    },
+    {
+      "id": "cc-q25",
+      "question": "Find the error in the following snippet:\n\nString str = null;\nSystem.out.println(str.length());",
+      "options": [
+        { "text": "NullPointerException at runtime", "career_weights": { "Backend Developer": 3, "AI Engineer": 2 } },
+        { "text": "Prints 0", "career_weights": { "Data Analyst": 3, "Business Analyst": 2 } },
+        { "text": "Compilation error", "career_weights": { "Business Analyst": 3, "Project Manager": 2 } },
+        { "text": "Prints null", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+      ],
+      "correct_answer": "NullPointerException at runtime",
+      "weight": 7
+    },
+    {
+      "id": "cc-q26",
+      "question": "What is the output of the following code?\n\nint a = 5;\nSystem.out.println(a-- - --a);",
+      "options": [
+        { "text": "1", "career_weights": { "AI Engineer": 3, "Full Stack Developer": 2 } },
+        { "text": "2", "career_weights": { "Data Analyst": 3, "Business Analyst": 2 } },
+        { "text": "0", "career_weights": { "Business Analyst": 3, "Project Manager": 2 } },
+        { "text": "Error", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+      ],
+      "correct_answer": "1",
+      "weight": 6
+    },
+    {
+      "id": "cc-q27",
+      "question": "What will be printed?\n\nfor(int i=0;i<3;i++) {\n  for(int j=0;j<2;j++) {\n    if(i==1) break;\n    System.out.print(i+j);\n  }\n}",
+      "options": [
+        { "text": "0012", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 2 } },
+        { "text": "012", "career_weights": { "Data Analyst": 3, "Business Analyst": 2 } },
+        { "text": "001", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+        { "text": "Error", "career_weights": { "Business Analyst": 3, "Project Manager": 2 } }
+      ],
+      "correct_answer": "0012",
+      "weight": 7
+    },
+    {
+      "id": "cc-q28",
+      "question": "What is the output of this code?\n\nString s1 = \"Hello\";\nString s2 = \"Hello\";\nSystem.out.println(s1==s2);",
+      "options": [
+        { "text": "true", "career_weights": { "AI Engineer": 3, "Backend Developer": 2 } },
+        { "text": "false", "career_weights": { "Business Analyst": 3, "Data Analyst": 2 } },
+        { "text": "Compilation error", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+        { "text": "Runtime error", "career_weights": { "Business Analyst": 3, "Project Manager": 2 } }
+      ],
+      "correct_answer": "true",
+      "weight": 6
+    },
+    {
+      "id": "cc-q29",
+      "question": "Identify the output:\n\nint[] arr = {1,2,3};\nSystem.out.println(arr[1] + arr[2]);",
+      "options": [
+        { "text": "5", "career_weights": { "Full Stack Developer": 3, "AI Researcher": 2 } },
+        { "text": "23", "career_weights": { "Data Analyst": 3, "Business Analyst": 2 } },
+        { "text": "3", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+        { "text": "Error", "career_weights": { "Business Analyst": 3, "Project Manager": 2 } }
+      ],
+      "correct_answer": "5",
+      "weight": 7
+    },
+    {
+      "id": "cc-q30",
+      "question": "Find the error:\n\nfor(int i=0;i<5;i++)\n  System.out.println(i)\n  System.out.println(i*i);",
+      "options": [
+        { "text": "Missing braces around multiple statements inside loop", "career_weights": { "Backend Developer": 3, "AI Engineer": 2 } },
+        { "text": "No error, prints correctly", "career_weights": { "Data Analyst": 3, "Business Analyst": 2 } },
+        { "text": "Compilation error due to missing semicolons", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+        { "text": "Runtime exception", "career_weights": { "Business Analyst": 3, "Project Manager": 2 } }
+      ],
+      "correct_answer": "Missing braces around multiple statements inside loop",
+      "weight": 7
+    },
+  {
+    "id": "cc-q31",
+    "question": "What is the output of the following code?\n\nint x = 2;\nint y = 3;\nSystem.out.println(x*y+++y);",
+    "options": [
+      { "text": "11", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 3, "AI Engineer": 2 } },
+      { "text": "12", "career_weights": { "Data Analyst": 2, "Business Analyst": 2, "Project Manager": 2 } },
+      { "text": "10", "career_weights": { "Business Analyst": 3, "Project Manager": 2 } },
+      { "text": "Error", "career_weights": { "Business Analyst": 3, "Project Manager": 2 } }
+    ],
+    "correct_answer": "11",
+    "weight": 7
+  },
+  {
+    "id": "cc-q32",
+    "question": "Find the output:\n\nString str = \"abc\";\nSystem.out.println(str.equalsIgnoreCase(\"ABC\"));",
+    "options": [
+      { "text": "true", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 3, "AI Researcher": 2 } },
+      { "text": "false", "career_weights": { "Business Analyst": 3, "Project Manager": 2 } },
+      { "text": "Compilation error", "career_weights": { "Data Analyst": 2, "Business Analyst": 2 } },
+      { "text": "Runtime error", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "correct_answer": "true",
+    "weight": 6
+  },
+  {
+    "id": "cc-q33",
+    "question": "What will be printed?\n\nint x = 5;\nint y = 10;\nif(x>y) {\n  System.out.println(x);\n} else {\n  System.out.println(y);\n}",
+    "options": [
+      { "text": "5", "career_weights": { "Business Analyst": 3, "Project Manager": 2 } },
+      { "text": "10", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 3, "Data Scientist": 2 } },
+      { "text": "Compilation error", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+      { "text": "0", "career_weights": { "Business Analyst": 2, "Data Analyst": 2 } }
+    ],
+    "correct_answer": "10",
+    "weight": 7
+  },
+  {
+    "id": "cc-q34",
+    "question": "What is the output of this code?\n\nint a = 3;\nint b = a++ + a++ + ++a;\nSystem.out.println(b);",
+    "options": [
+      { "text": "12", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 3, "AI Engineer": 2 } },
+      { "text": "11", "career_weights": { "Business Analyst": 3, "Project Manager": 2 } },
+      { "text": "10", "career_weights": { "Business Analyst": 3, "Data Analyst": 2 } },
+      { "text": "Error", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "correct_answer": "12",
+    "weight": 7
+  },
+  {
+    "id": "cc-q35",
+    "question": "Find the error:\n\nint[] arr = new int[3];\narr[3] = 10;",
+    "options": [
+      { "text": "ArrayIndexOutOfBoundsException", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 3, "AI Engineer": 2 } },
+      { "text": "Compilation error", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+      { "text": "Runtime error", "career_weights": { "Data Analyst": 2, "Business Analyst": 2 } },
+      { "text": "No error, code runs fine", "career_weights": { "Business Analyst": 3, "Project Manager": 2 } }
+    ],
+    "correct_answer": "ArrayIndexOutOfBoundsException",
+    "weight": 7
+  },
+  {
+    "id": "cc-q36",
+    "question": "What will be printed?\n\nint x = 0;\nwhile(x<3) {\n  System.out.print(x);\n  x++;\n}",
+    "options": [
+      { "text": "012", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 3, "AI Researcher": 2 } },
+      { "text": "123", "career_weights": { "Business Analyst": 2, "Project Manager": 2 } },
+      { "text": "0123", "career_weights": { "Business Analyst": 3, "Data Analyst": 2 } },
+      { "text": "Error", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "correct_answer": "012",
+    "weight": 6
+  },
+  {
+    "id": "cc-q37",
+    "question": "What is the output?\n\nString s = \"Java\";\nSystem.out.println(s.substring(1,3));",
+    "options": [
+      { "text": "av", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 3, "AI Engineer": 2 } },
+      { "text": "Ja", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+      { "text": "va", "career_weights": { "Business Analyst": 3, "Data Analyst": 2 } },
+      { "text": "Error", "career_weights": { "Business Analyst": 2, "Project Manager": 2 } }
+    ],
+    "correct_answer": "av",
+    "weight": 7
+  },
+  {
+    "id": "cc-q38",
+    "question": "Find the output:\n\nint x = 2;\nint y = 3;\nSystem.out.println(x<<y);",
+    "options": [
+      { "text": "16", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 3, "AI Engineer": 2 } },
+      { "text": "8", "career_weights": { "Data Analyst": 2, "Business Analyst": 2 } },
+      { "text": "4", "career_weights": { "Business Analyst": 3, "Project Manager": 2 } },
+      { "text": "Error", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "correct_answer": "16",
+    "weight": 7
+  },
+  {
+    "id": "cc-q39",
+    "question": "What is the output?\n\nint a = 5;\nint b = 10;\nint c = a>b ? a:b;\nSystem.out.println(c);",
+    "options": [
+      { "text": "5", "career_weights": { "Business Analyst": 3, "Project Manager": 2 } },
+      { "text": "10", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 3, "AI Engineer": 2 } },
+      { "text": "Compilation error", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+      { "text": "0", "career_weights": { "Data Analyst": 2, "Business Analyst": 2 } }
+    ],
+    "correct_answer": "10",
+    "weight": 6
+  },
+  {
+    "id": "cc-q40",
+    "question": "Identify the error:\n\nfor(int i=0;i<3;i++)\n  for(int j=0;j<2;j++)\n    System.out.println(i+j)",
+    "options": [
+      { "text": "Missing semicolon after println", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 3, "AI Engineer": 2 } },
+      { "text": "Extra braces required", "career_weights": { "Business Analyst": 2, "Project Manager": 2 } },
+      { "text": "No error, prints correctly", "career_weights": { "Data Analyst": 2, "Business Analyst": 2 } },
+      { "text": "Runtime error", "career_weights": { "Business Analyst": 3, "Project Manager": 2 } }
+    ],
+    "correct_answer": "Missing semicolon after println",
+    "weight": 7
+  },
+  {
+    "id": "cc-q41",
+    "question": "What is the output?\n\nint x = 1;\nint y = 2;\nint z = x++ + ++y + y++;\nSystem.out.println(z);",
+    "options": [
+      { "text": "6", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 3, "AI Researcher": 2 } },
+      { "text": "7", "career_weights": { "Business Analyst": 3, "Project Manager": 2 } },
+      { "text": "5", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+      { "text": "Error", "career_weights": { "Business Analyst": 3, "Project Manager": 2 } }
+    ],
+    "correct_answer": "6",
+    "weight": 7
+  },
+  {
+    "id": "cc-q42",
+    "question": "Identify the output:\n\nString s = \"Hello\";\nchar c = s.charAt(4);\nSystem.out.println(c);",
+    "options": [
+      { "text": "o", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 3, "AI Engineer": 2 } },
+      { "text": "l", "career_weights": { "Data Analyst": 2, "Business Analyst": 2 } },
+      { "text": "Error", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } },
+      { "text": "H", "career_weights": { "Business Analyst": 3, "Project Manager": 2 } }
+    ],
+    "correct_answer": "o",
+    "weight": 6
+  },
+  {
+    "id": "cc-q43",
+    "question": "What will be printed?\n\nint a = 5;\nint b = 10;\na += b;\nb -= a;\nSystem.out.println(a + \",\" + b);",
+    "options": [
+      { "text": "15,-5", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 3, "AI Engineer": 2 } },
+      { "text": "15,5", "career_weights": { "Business Analyst": 2, "Data Analyst": 2 } },
+      { "text": "5,10", "career_weights": { "Business Analyst": 3, "Project Manager": 2 } },
+      { "text": "Error", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "correct_answer": "15,-5",
+    "weight": 7
+  },
+  {
+    "id": "cc-q44",
+    "question": "Find the output:\n\nint x = 0;\ndo {\n  System.out.print(x);\n  x++;\n} while(x<3);",
+    "options": [
+      { "text": "012", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 3, "AI Researcher": 2 } },
+      { "text": "123", "career_weights": { "Business Analyst": 2, "Project Manager": 2 } },
+      { "text": "0123", "career_weights": { "Data Analyst": 2, "Business Analyst": 2 } },
+      { "text": "Error", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "correct_answer": "012",
+    "weight": 6
+  },
+  {
+    "id": "cc-q45",
+    "question": "What is the output of the following code?\n\nint[] arr = {1,2,3,4};\nfor(int i=0;i<arr.length;i++) {\n  arr[i] = arr[i]*2;\n}\nSystem.out.println(arr[1]);",
+    "options": [
+      { "text": "4", "career_weights": { "Backend Developer": 3, "Full Stack Developer": 3, "AI Engineer": 2 } },
+      { "text": "2", "career_weights": { "Business Analyst": 3, "Project Manager": 2 } },
+      { "text": "8", "career_weights": { "Data Analyst": 2, "Business Analyst": 2 } },
+      { "text": "Error", "career_weights": { "Project Manager": 3, "Business Analyst": 2 } }
+    ],
+    "correct_answer": "4",
+    "weight": 7
+  },
+  {
+    "id": "cc-q45",
+    "question": "What is the output of the following code?\n\nint[] arr = {1,2,3,4};\nfor(int i=0;i<arr.length;i++) {\n  arr[i] = arr[i]*2;\n}\nSystem.out.println(arr[1]);",
+    "options": [
+      { "text": "4", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 3, "AI Engineer": 2, "AI Researcher": 2, "Data Scientist": 2 } },
+      { "text": "2", "career_weights": { "Data Analyst": 2, "Business Analyst": 3, "Project Manager": 2 } },
+      { "text": "8", "career_weights": { "Data Analyst": 2, "Business Analyst": 2, "Project Manager": 2 } },
+      { "text": "Error", "career_weights": { "Data Analyst": 1, "Business Analyst": 2, "Project Manager": 3 } }
+    ],
+    "correct_answer": "4",
+    "weight": 7
+  },
+  {
+    "id": "cc-q46",
+    "question": "Identify the output:\n\nString s1 = new String(\"Java\");\nString s2 = new String(\"Java\");\nSystem.out.println(s1==s2);",
+    "options": [
+      { "text": "false", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 3, "AI Engineer": 2, "AI Researcher": 2, "Data Scientist": 2 } },
+      { "text": "true", "career_weights": { "Data Analyst": 2, "Business Analyst": 2, "Project Manager": 2 } },
+      { "text": "Compilation error", "career_weights": { "Data Analyst": 2, "Business Analyst": 2, "Project Manager": 2 } },
+      { "text": "Runtime exception", "career_weights": { "Data Analyst": 1, "Business Analyst": 2, "Project Manager": 2 } }
+    ],
+    "correct_answer": "false",
+    "weight": 7
+  },
+  {
+    "id": "cc-q47",
+    "question": "What will be printed?\n\nint x = 5;\nint y = x++ + x++ + x++;\nSystem.out.println(y);",
+    "options": [
+      { "text": "18", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 3, "AI Engineer": 2, "AI Researcher": 2, "Data Scientist": 2 } },
+      { "text": "17", "career_weights": { "Data Analyst": 2, "Business Analyst": 2, "Project Manager": 2 } },
+      { "text": "16", "career_weights": { "Data Analyst": 2, "Business Analyst": 2, "Project Manager": 2 } },
+      { "text": "Error", "career_weights": { "Data Analyst": 1, "Business Analyst": 2, "Project Manager": 2 } }
+    ],
+    "correct_answer": "18",
+    "weight": 7
+  },
+  {
+    "id": "cc-q48",
+    "question": "Find the error:\n\nint[] arr = {1,2,3};\nSystem.out.println(arr[3]);",
+    "options": [
+      { "text": "ArrayIndexOutOfBoundsException", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 3, "AI Engineer": 2, "AI Researcher": 2, "Data Scientist": 2 } },
+      { "text": "Compilation error", "career_weights": { "Data Analyst": 2, "Business Analyst": 2, "Project Manager": 2 } },
+      { "text": "Runtime error", "career_weights": { "Data Analyst": 2, "Business Analyst": 2, "Project Manager": 2 } },
+      { "text": "Prints 0", "career_weights": { "Data Analyst": 1, "Business Analyst": 2, "Project Manager": 2 } }
+    ],
+    "correct_answer": "ArrayIndexOutOfBoundsException",
+    "weight": 7
+  },
+  {
+    "id": "cc-q49",
+    "question": "What is the output?\n\nint a = 3;\nint b = 4;\nSystem.out.println(++a * b--);",
+    "options": [
+      { "text": "16", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 3, "AI Engineer": 2, "AI Researcher": 2, "Data Scientist": 2 } },
+      { "text": "12", "career_weights": { "Data Analyst": 2, "Business Analyst": 2, "Project Manager": 2 } },
+      { "text": "15", "career_weights": { "Data Analyst": 2, "Business Analyst": 2, "Project Manager": 2 } },
+      { "text": "Error", "career_weights": { "Data Analyst": 1, "Business Analyst": 2, "Project Manager": 2 } }
+    ],
+    "correct_answer": "16",
+    "weight": 6
+  },
+  {
+    "id": "cc-q50",
+    "question": "Identify the output:\n\nint x = 1;\nif(x > 0) {\n  int y = x*2;\n}\nSystem.out.println(y);",
+    "options": [
+      { "text": "Compilation error due to scope of y", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 3, "AI Engineer": 2, "AI Researcher": 2, "Data Scientist": 2 } },
+      { "text": "2", "career_weights": { "Data Analyst": 2, "Business Analyst": 2, "Project Manager": 2 } },
+      { "text": "1", "career_weights": { "Data Analyst": 2, "Business Analyst": 2, "Project Manager": 2 } },
+      { "text": "Runtime error", "career_weights": { "Data Analyst": 1, "Business Analyst": 2, "Project Manager": 2 } }
+    ],
+    "correct_answer": "Compilation error due to scope of y",
+    "weight": 7
+  },
+  {
+    "id": "cc-q51",
+    "question": "What will be printed?\n\nint x = 3;\nint y = 4;\nSystem.out.println(x++ + ++x + y--);",
+    "options": [
+      { "text": "11", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 3, "AI Engineer": 2, "AI Researcher": 2, "Data Scientist": 2 } },
+      { "text": "12", "career_weights": { "Data Analyst": 2, "Business Analyst": 2, "Project Manager": 2 } },
+      { "text": "10", "career_weights": { "Data Analyst": 2, "Business Analyst": 2, "Project Manager": 2 } },
+      { "text": "Error", "career_weights": { "Data Analyst": 1, "Business Analyst": 2, "Project Manager": 2 } }
+    ],
+    "correct_answer": "11",
+    "weight": 7
+  },
+  {
+    "id": "cc-q52",
+    "question": "Identify the output:\n\nString s1 = \"Java\";\nString s2 = \"Ja\" + \"va\";\nSystem.out.println(s1==s2);",
+    "options": [
+      { "text": "true", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 3, "AI Engineer": 2, "AI Researcher": 2, "Data Scientist": 2 } },
+      { "text": "false", "career_weights": { "Data Analyst": 2, "Business Analyst": 2, "Project Manager": 2 } },
+      { "text": "Compilation error", "career_weights": { "Data Analyst": 2, "Business Analyst": 2, "Project Manager": 2 } },
+      { "text": "Runtime exception", "career_weights": { "Data Analyst": 1, "Business Analyst": 2, "Project Manager": 2 } }
+    ],
+    "correct_answer": "true",
+    "weight": 6
+  },
+  {
+    "id": "cc-q53",
+    "question": "What is the output?\n\nint[] arr = {1,2,3};\nfor(int i=arr.length-1;i>=0;i--) {\n  System.out.print(arr[i]);\n}",
+    "options": [
+      { "text": "321", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 3, "AI Engineer": 2, "AI Researcher": 2, "Data Scientist": 2 } },
+      { "text": "123", "career_weights": { "Data Analyst": 2, "Business Analyst": 2, "Project Manager": 2 } },
+      { "text": "Error", "career_weights": { "Data Analyst": 2, "Business Analyst": 2, "Project Manager": 2 } },
+      { "text": "213", "career_weights": { "Data Analyst": 1, "Business Analyst": 2, "Project Manager": 2 } }
+    ],
+    "correct_answer": "321",
+    "weight": 7
+  },
+  {
+    "id": "cc-q54",
+    "question": "Find the output:\n\nint a = 2;\nint b = 3;\nSystem.out.println(a*b+++b);",
+    "options": [
+      { "text": "11", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 3, "AI Engineer": 2, "AI Researcher": 2, "Data Scientist": 2 } },
+      { "text": "10", "career_weights": { "Data Analyst": 2, "Business Analyst": 2, "Project Manager": 2 } },
+      { "text": "12", "career_weights": { "Data Analyst": 2, "Business Analyst": 2, "Project Manager": 2 } },
+      { "text": "Error", "career_weights": { "Data Analyst": 1, "Business Analyst": 2, "Project Manager": 2 } }
+    ],
+    "correct_answer": "11",
+    "weight": 7
+  },
+  {
+    "id": "cc-q55",
+    "question": "What will be printed?\n\nint x = 1;\nif(x>0) {\n  int y = x+1;\n  System.out.println(y);\n}",
+    "options": [
+      { "text": "2", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 3, "AI Engineer": 2, "AI Researcher": 2, "Data Scientist": 2 } },
+      { "text": "1", "career_weights": { "Data Analyst": 2, "Business Analyst": 2, "Project Manager": 2 } },
+      { "text": "Compilation error", "career_weights": { "Data Analyst": 2, "Business Analyst": 2, "Project Manager": 2 } },
+      { "text": "Runtime error", "career_weights": { "Data Analyst": 1, "Business Analyst": 2, "Project Manager": 2 } }
+    ],
+    "correct_answer": "2",
+    "weight": 6
+  },
+  {
+    "id": "cc-q56",
+    "question": "Find the output:\n\nint[] arr = new int[3];\nSystem.out.println(arr[0]);",
+    "options": [
+      { "text": "0", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 3, "AI Engineer": 2, "AI Researcher": 2, "Data Scientist": 2 } },
+      { "text": "null", "career_weights": { "Data Analyst": 2, "Business Analyst": 2, "Project Manager": 2 } },
+      { "text": "Error", "career_weights": { "Data Analyst": 2, "Business Analyst": 2, "Project Manager": 2 } },
+      { "text": "-1", "career_weights": { "Data Analyst": 1, "Business Analyst": 2, "Project Manager": 2 } }
+    ],
+    "correct_answer": "0",
+    "weight": 7
+  },
+  {
+    "id": "cc-q57",
+    "question": "What is the output?\n\nString s = \"Programming\";\nSystem.out.println(s.indexOf('g'));",
+    "options": [
+      { "text": "3", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 3, "AI Engineer": 2, "AI Researcher": 2, "Data Scientist": 2 } },
+      { "text": "10", "career_weights": { "Data Analyst": 2, "Business Analyst": 2, "Project Manager": 2 } },
+      { "text": "Error", "career_weights": { "Data Analyst": 2, "Business Analyst": 2, "Project Manager": 2 } },
+      { "text": "-1", "career_weights": { "Data Analyst": 1, "Business Analyst": 2, "Project Manager": 2 } }
+    ],
+    "correct_answer": "3",
+    "weight": 7
+  },
+  {
+    "id": "cc-q58",
+    "question": "Identify the error:\n\nfor(int i=0;i<3;i++)\n  System.out.println(i)\nSystem.out.println(\"Done\");",
+    "options": [
+      { "text": "Missing semicolon after println", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 3, "AI Engineer": 2, "AI Researcher": 2, "Data Scientist": 2 } },
+      { "text": "Extra braces required", "career_weights": { "Data Analyst": 2, "Business Analyst": 2, "Project Manager": 2 } },
+      { "text": "No error", "career_weights": { "Data Analyst": 2, "Business Analyst": 2, "Project Manager": 2 } },
+      { "text": "Runtime exception", "career_weights": { "Data Analyst": 1, "Business Analyst": 2, "Project Manager": 2 } }
+    ],
+    "correct_answer": "Missing semicolon after println",
+    "weight": 6
+  },
+  {
+    "id": "cc-q59",
+    "question": "What will be printed?\n\nint a = 5;\nSystem.out.println(a>3 ? a*2 : a/2);",
+    "options": [
+      { "text": "10", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 3, "AI Engineer": 2, "AI Researcher": 2, "Data Scientist": 2 } },
+      { "text": "2", "career_weights": { "Data Analyst": 2, "Business Analyst": 2, "Project Manager": 2 } },
+      { "text": "5", "career_weights": { "Data Analyst": 2, "Business Analyst": 2, "Project Manager": 2 } },
+      { "text": "Error", "career_weights": { "Data Analyst": 1, "Business Analyst": 2, "Project Manager": 2 } }
+    ],
+    "correct_answer": "10",
+    "weight": 7
+  },
+  {
+    "id": "cc-q60",
+    "question": "Find the output:\n\nint x = 2;\nint y = 3;\nSystem.out.println(x*y>>1);",
+    "options": [
+      { "text": "3", "career_weights": { "Full Stack Developer": 3, "Backend Developer": 3, "AI Engineer": 2, "AI Researcher": 2, "Data Scientist": 2 } },
+      { "text": "5", "career_weights": { "Data Analyst": 2, "Business Analyst": 2, "Project Manager": 2 } },
+      { "text": "6", "career_weights": { "Data Analyst": 2, "Business Analyst": 2, "Project Manager": 2 } },
+      { "text": "Error", "career_weights": { "Data Analyst": 1, "Business Analyst": 2, "Project Manager": 2 } }
+    ],
+    "correct_answer": "3",
+    "weight": 7
+  }
+]
+  
+}
+
+
