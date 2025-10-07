@@ -184,8 +184,15 @@ const Quiz = () => {
       const legacyAnswers = convertToLegacyAnswers();
       console.log('📋 Legacy answers:', legacyAnswers);
       
-      // 🔧 NEW: Use the updated backend with rule-based system
-      const result = await submitQuizAnswers(answers, legacyAnswers);
+      // Group answers by category for backend
+      const groupedAnswers = groupAnswersByCategory();
+      console.log('Grouped answers for backend:', groupedAnswers);
+
+      // Submit to backend
+      const result = await submitQuizAnswers({
+        studentId: 1, // or get from user context
+        answers: groupedAnswers
+      });
       
       console.log('✅ Quiz submission successful:', result);
       console.log('✅ Result type:', typeof result);
@@ -211,8 +218,7 @@ const Quiz = () => {
           analysisType: result.fallback ? 'fallback' : 'smart-algorithm',
           submissionTime: new Date().toISOString()
         }));
-        
-        navigate('/results');
+        navigate('/results', { state: { predictions: result.predictions } });
         
       } else {
         console.error('❌ Backend returned invalid response structure');
@@ -769,6 +775,43 @@ const Quiz = () => {
       [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
     }
     return shuffled;
+  };
+
+  // Add this helper function inside your Quiz.jsx
+  const groupAnswersByCategory = () => {
+    const grouped = {
+      techQuiz: [],
+      codeChallenge: [],
+      interest: [],
+      scenario: [],
+      personality: []
+    };
+
+    Object.entries(answers).forEach(([questionId, answerIndex]) => {
+      const question = questions.find(q => q.id === questionId);
+      if (!question) return;
+      switch (question.category) {
+        case 'TechQuiz':
+          grouped.techQuiz.push(answerIndex);
+          break;
+        case 'CodeChallenge':
+          grouped.codeChallenge.push(answerIndex);
+          break;
+        case 'InterestProfile':
+          grouped.interest.push(answerIndex);
+          break;
+        case 'ScenarioSolver':
+          grouped.scenario.push(answerIndex);
+          break;
+        case 'Personality':
+          grouped.personality.push(answerIndex);
+          break;
+        default:
+          break;
+      }
+    });
+
+    return grouped;
   };
 
   if (loading) {

@@ -211,9 +211,7 @@ const Navbar = () => {
                     <Link to="/results" className="dropdown-item">
                       <span>📊</span> My Results
                     </Link>
-                    <Link to="/settings" className="dropdown-item">
-                      <span>⚙️</span> Settings
-                    </Link>
+                   
                     <div className="dropdown-divider"></div>
                     <button onClick={handleLogout} className="dropdown-item logout">
                       <span>🚪</span> Logout

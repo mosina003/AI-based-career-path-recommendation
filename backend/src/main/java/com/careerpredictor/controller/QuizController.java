@@ -2,7 +2,6 @@ package com.careerpredictor.controller;
 
 import com.careerpredictor.dto.QuizQuestionDTO;
 import com.careerpredictor.dto.QuizSubmissionDTO;
-import com.careerpredictor.entity.QuizScore;
 import com.careerpredictor.service.QuizService;
 import com.careerpredictor.service.StudentService;
 import com.careerpredictor.service.AIEngineService;
@@ -10,7 +9,10 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.*;
-import java.util.concurrent.CompletableFuture;
+import org.springframework.web.client.RestTemplate;
+import org.springframework.http.*;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import org.springframework.core.ParameterizedTypeReference;
 
 @RestController
 @RequestMapping("/api/quiz")
@@ -117,57 +119,90 @@ public class QuizController {
 
     // ✅ ULTRA FAST: Skip AI service entirely
     @PostMapping("/submit")
-    public ResponseEntity<Map<String, Object>> submitQuiz(@RequestBody Map<String, Object> requestBody) {
+    public ResponseEntity<Map<String, Object>> submitQuiz(@RequestBody QuizSubmissionDTO submission) {
+        submission.logAnswers();
+
         try {
-            System.out.println("📥 Quiz submission received - using fast mode");
-            
-            Long studentId = 1L;
-            if (requestBody.containsKey("studentId")) {
-                Object studentIdObj = requestBody.get("studentId");
-                if (studentIdObj instanceof Number) {
-                    studentId = ((Number) studentIdObj).longValue();
+            // Send grouped answers to AI model and get top 3 careers
+            Map<String, List<Integer>> groupedAnswers = submission.getAnswers();
+            List<String> topCareers = getTopCareers(groupedAnswers);
+
+            Map<String, Object> response = new HashMap<>();
+            response.put("success", true);
+            response.put("topCareers", topCareers);
+            response.put("message", "AI model successfully predicted the top 3 careers");
+
+            return ResponseEntity.ok(response);
+
+        } catch (Exception e) {
+            System.err.println("AI prediction failed: " + e.getMessage());
+            return ResponseEntity.ok(createSmartFallbackResponse(submission.getAnswers()));
+        }
+    }
+
+    // Helper to extract answers list from rawAnswers map
+    private List<Integer> getAnswersList(Map<String, Object> rawAnswers, String key) {
+        Object obj = rawAnswers.get(key);
+        if (obj instanceof List<?>) {
+            List<?> list = (List<?>) obj;
+            List<Integer> intList = new ArrayList<>();
+            for (Object o : list) {
+                if (o instanceof Number) {
+                    intList.add(((Number) o).intValue());
+                } else if (o instanceof String) {
+                    try {
+                        intList.add(Integer.parseInt((String) o));
+                    } catch (NumberFormatException e) {
+                        intList.add(1); // default value
+                    }
                 }
             }
-            
-            @SuppressWarnings("unchecked")
-            Map<String, Object> rawAnswers = requestBody.containsKey("answers") 
-                ? (Map<String, Object>) requestBody.get("answers")
-                : new HashMap<>(requestBody);
-            
-            rawAnswers.remove("studentId");
-            
-            System.out.println("📊 Processing " + rawAnswers.size() + " answers for student: " + studentId);
-            
-            // ✅ SAVE TO DATABASE ONLY (Fast)
-            try {
-                QuizSubmissionDTO submission = new QuizSubmissionDTO();
-                submission.setStudentId(studentId);
-                Map<String, Integer> integerAnswers = convertToIntegerMap(rawAnswers);
-                submission.setAnswers(integerAnswers);
-                
-                // Save answers to database in background (don't wait)
-                CompletableFuture.runAsync(() -> {
-                    try {
-                        quizService.submitQuizAnswers(submission);
-                    } catch (Exception e) {
-                        System.err.println("Background save error: " + e.getMessage());
-                    }
-                });
-                
-            } catch (Exception e) {
-                System.err.println("Database save error: " + e.getMessage());
-            }
-            
-            // ✅ IMMEDIATE RESPONSE: Smart analysis without AI delays
-            Map<String, Object> result = createSmartFallbackResponse(rawAnswers);
-            
-            System.out.println("⚡ Ultra-fast response generated");
-            return ResponseEntity.ok(result);
-            
-        } catch (Exception e) {
-            System.err.println("❌ Controller error: " + e.getMessage());
-            return ResponseEntity.ok(createFallbackSubmissionResponse());
+            return intList;
         }
+        return new ArrayList<>();
+    }
+
+    // Helper method to call Python prediction API
+    private String getCareerPrediction(Map<String, List<Integer>> groupedAnswers, String category) {
+        try {
+            RestTemplate restTemplate = new RestTemplate();
+            String url = "http://127.0.0.1:5000/predict/" + category.toLowerCase();
+
+            Map<String, Object> payload = new HashMap<>();
+            if ("overall".equalsIgnoreCase(category)) {
+                Map<String, Object> answers = new HashMap<>();
+                if (groupedAnswers.containsKey("TechQuiz")) answers.put("techquiz", groupedAnswers.get("TechQuiz"));
+                if (groupedAnswers.containsKey("CodeChallenge")) answers.put("codechallenge", groupedAnswers.get("CodeChallenge"));
+                if (groupedAnswers.containsKey("InterestProfile")) answers.put("interest", groupedAnswers.get("InterestProfile"));
+                if (groupedAnswers.containsKey("ScenarioSolver")) answers.put("scenario", groupedAnswers.get("ScenarioSolver"));
+                if (groupedAnswers.containsKey("Personality")) answers.put("personality", groupedAnswers.get("Personality"));
+                payload.put("answers", answers);
+            } else {
+                payload.put("answers", groupedAnswers.get(category));
+            }
+
+            HttpHeaders headers = new HttpHeaders();
+            headers.setContentType(MediaType.APPLICATION_JSON);
+
+            ObjectMapper mapper = new ObjectMapper();
+            String json = mapper.writeValueAsString(payload);
+
+            HttpEntity<String> entity = new HttpEntity<>(json, headers);
+
+            ResponseEntity<Map<String, Object>> response = restTemplate.exchange(
+                url,
+                HttpMethod.POST,
+                entity,
+                new ParameterizedTypeReference<Map<String, Object>>() {}
+            );
+            Map<String, Object> body = response.getBody();
+            if (body != null && body.containsKey("career")) {
+                return body.get("career").toString();
+            }
+        } catch (Exception e) {
+            System.err.println("Python prediction API error: " + e.getMessage());
+        }
+        return "Unknown";
     }
 
     // ✅ Keep existing endpoints unchanged
@@ -176,12 +211,6 @@ public class QuizController {
                                                               @RequestParam(defaultValue = "8") int count) throws Exception {
         List<QuizQuestionDTO> questions = quizService.getQuestions(category, count);
         return ResponseEntity.ok(questions);
-    }
-
-    @PostMapping("/submitAnswers")
-    public ResponseEntity<QuizScore> submitQuizAnswersOnly(@RequestBody QuizSubmissionDTO submission) throws Exception {
-        QuizScore score = quizService.submitAnswers(submission);
-        return ResponseEntity.ok(score);
     }
 
     @GetMapping("/test")
@@ -361,7 +390,7 @@ public class QuizController {
     }
     
     // ✅ Smart fallback that analyzes user answers
-    private Map<String, Object> createSmartFallbackResponse(Map<String, Object> answers) {
+    private Map<String, Object> createSmartFallbackResponse(Map<String, List<Integer>> answers) {
         Map<String, Object> response = new HashMap<>();
         response.put("success", true);
         response.put("message", "Quiz submitted successfully");
@@ -375,15 +404,18 @@ public class QuizController {
     }
 
     // ✅ Analyze user answers to suggest relevant careers
-    private List<Map<String, Object>> analyzeAnswersForCareers(Map<String, Object> answers) {
+    private List<Map<String, Object>> analyzeAnswersForCareers(Map<String, List<Integer>> answers) {
         double techScore = 0.0;
         double designScore = 0.0;
         double dataScore = 0.0;
         double managementScore = 0.0;
 
-        for (Map.Entry<String, Object> entry : answers.entrySet()) {
+        for (Map.Entry<String, List<Integer>> entry : answers.entrySet()) {
             String questionKey = entry.getKey().toLowerCase();
-            int answerValue = getAnswerValue(entry.getValue());
+            List<Integer> answerValues = entry.getValue();
+
+            // Average the scores for each question (assuming 1-5 scale)
+            int answerValue = (int) answerValues.stream().mapToInt(Integer::intValue).average().orElse(3);
 
             // Map question IDs to categories
             if (questionKey.startsWith("tq") || questionKey.startsWith("cc")) {
@@ -457,5 +489,59 @@ public class QuizController {
         prediction.put("target_companies", Arrays.asList("Google", "Microsoft", "Apple", "Amazon"));
         
         return prediction;
+    }
+
+    // Helper for icons (customize as needed)
+    private String getCareerIcon(String career) {
+        switch (career.toLowerCase()) {
+            case "data scientist": return "📊";
+            case "frontend developer": return "🎨";
+            case "backend developer": return "🔧";
+            case "product manager": return "📋";
+            case "ux designer": return "🖌️";
+            case "software developer": return "💻";
+            case "ai engineer": return "🤖";
+            case "full stack developer": return "⚡";
+            case "data analyst": return "📈";
+            default: return "💼";
+        }
+    }
+
+    private List<String> getTopCareers(Map<String, List<Integer>> groupedAnswers) {
+        try {
+            RestTemplate restTemplate = new RestTemplate();
+            String url = "http://127.0.0.1:5000/predict/overall";
+
+            Map<String, Object> payload = new HashMap<>();
+            Map<String, Object> answers = new HashMap<>();
+            if (groupedAnswers.containsKey("TechQuiz")) answers.put("techquiz", groupedAnswers.get("TechQuiz"));
+            if (groupedAnswers.containsKey("CodeChallenge")) answers.put("codechallenge", groupedAnswers.get("CodeChallenge"));
+            if (groupedAnswers.containsKey("InterestProfile")) answers.put("interest", groupedAnswers.get("InterestProfile"));
+            if (groupedAnswers.containsKey("ScenarioSolver")) answers.put("scenario", groupedAnswers.get("ScenarioSolver"));
+            if (groupedAnswers.containsKey("Personality")) answers.put("personality", groupedAnswers.get("Personality"));
+            payload.put("answers", answers);
+
+            HttpHeaders headers = new HttpHeaders();
+            headers.setContentType(MediaType.APPLICATION_JSON);
+
+            ObjectMapper mapper = new ObjectMapper();
+            String json = mapper.writeValueAsString(payload);
+
+            HttpEntity<String> entity = new HttpEntity<>(json, headers);
+
+            ResponseEntity<Map<String, Object>> response = restTemplate.exchange(
+                url,
+                HttpMethod.POST,
+                entity,
+                new ParameterizedTypeReference<Map<String, Object>>() {}
+            );
+            Map<String, Object> body = response.getBody();
+            if (body != null && body.containsKey("top_careers")) {
+                return (List<String>) body.get("top_careers");
+            }
+        } catch (Exception e) {
+            System.err.println("Python prediction API error: " + e.getMessage());
+        }
+        return Collections.singletonList("Unknown");
     }
 }

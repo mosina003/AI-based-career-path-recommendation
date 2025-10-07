@@ -5,6 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
 import java.util.Map;
 
 @Data
@@ -13,7 +14,7 @@ import java.util.Map;
 public class QuizSubmissionDTO {
     
     @JsonProperty("answers")
-    private Map<String, Integer> answers; // ✅ String keys for question IDs
+    private Map<String, List<Integer>> answers; // <-- FIXED: List<Integer> for each category
 
     @JsonProperty("legacyAnswers")
     private Map<Integer, String> legacyAnswers;

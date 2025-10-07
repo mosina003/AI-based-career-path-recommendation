@@ -332,28 +332,14 @@ export const getQuizQuestions = async () => {
   }
 };
 
-export const submitQuizAnswers = async (answers, legacyAnswers = null) => {
+export const submitQuizAnswers = async (payload) => {
   try {
-    console.log('📤 Submitting quiz answers...');
-    
-    const payload = {
-      answers: answers || {},
-      legacyAnswers: legacyAnswers || {},
-      userId: 1,
-      studentId: 1,
-      category: "mixed"
-    };
-    
-    // Fix: Use axios instead of apiClient (which doesn't exist)
     const response = await axios.post('/quiz/submit', payload);
-    
-    console.log('✅ Quiz answers submitted');
-    
+    // The backend returns { success, topCareers, message }
     return response.data;
-    
   } catch (error) {
-    console.error('❌ Error submitting quiz:', error);
-    throw error;
+    console.error('❌ Quiz submission error:', error.response?.data || error.message);
+    throw new Error(error.response?.data?.error || 'Quiz submission failed');
   }
 };
 

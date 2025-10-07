@@ -49,7 +49,7 @@ public class CareerPredictionService {
     }
 
     // ✅ NEW METHOD: For QuizService integration
-    public CareerPredictionResult generatePredictions(Map<String, Integer> answers, Long userId) {
+    public CareerPredictionResult generatePredictions(Map<String, List<Integer>> answers, Long userId) {
         try {
             System.out.println("🧠 Analyzing quiz responses with smart algorithm for user: " + userId);
             System.out.println("📊 Processing " + answers.size() + " quiz answers");
@@ -76,7 +76,7 @@ public class CareerPredictionService {
     }
     
     // ✅ SMART ANALYZER: Analyzes quiz patterns
-    private CareerAnalysisResult analyzeQuizResponses(Map<String, Integer> answers) {
+    private CareerAnalysisResult analyzeQuizResponses(Map<String, List<Integer>> answers) {
         CareerAnalysisResult analysis = new CareerAnalysisResult();
         
         int techScore = 0;
@@ -85,38 +85,45 @@ public class CareerPredictionService {
         int peopleScore = 0;
         int businessScore = 0;
         
-        for (Map.Entry<String, Integer> entry : answers.entrySet()) {
+        for (Map.Entry<String, List<Integer>> entry : answers.entrySet()) {
             String questionId = entry.getKey();
-            Integer answer = entry.getValue();
+            List<Integer> responseList = entry.getValue();
+            
+            // Aggregate responses for scoring
+            int responseSum = 0;
+            for (Integer response : responseList) {
+                responseSum += response;
+            }
+            int averageResponse = responseSum / responseList.size();
             
             // Technical Questions (TQ)
             if (questionId.startsWith("TQ")) {
-                if (answer >= 2) techScore += 3;
-                else if (answer == 1) techScore += 1;
+                if (averageResponse >= 2) techScore += 3;
+                else if (averageResponse == 1) techScore += 1;
             }
             
             // Creative/Communication Questions (cc)
             else if (questionId.startsWith("cc")) {
-                if (answer >= 2) creativeScore += 3;
-                else if (answer == 1) creativeScore += 1;
+                if (averageResponse >= 2) creativeScore += 3;
+                else if (averageResponse == 1) creativeScore += 1;
             }
             
             // Analytical/Problem-solving Questions (ip)
             else if (questionId.startsWith("ip")) {
-                if (answer >= 2) analyticalScore += 3;
-                else if (answer == 1) analyticalScore += 1;
+                if (averageResponse >= 2) analyticalScore += 3;
+                else if (averageResponse == 1) analyticalScore += 1;
             }
             
             // People/Interaction Questions (pi)
             else if (questionId.startsWith("pi")) {
-                if (answer >= 2) peopleScore += 3;
-                else if (answer == 1) peopleScore += 1;
+                if (averageResponse >= 2) peopleScore += 3;
+                else if (averageResponse == 1) peopleScore += 1;
             }
             
             // Scenario-based Questions (business orientation)
             else if (questionId.startsWith("scenario")) {
-                if (answer >= 2) businessScore += 2;
-                else if (answer == 1) businessScore += 1;
+                if (averageResponse >= 2) businessScore += 2;
+                else if (averageResponse == 1) businessScore += 1;
             }
         }
         

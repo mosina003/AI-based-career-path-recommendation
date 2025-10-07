@@ -661,7 +661,6 @@
       ],
       "correct_answer": "Spring Boot"
     },
-[
   {
     "id": "TQ61",
     "question": "In microservices, which pattern is commonly used to handle service-to-service communication?",
@@ -773,5 +772,5 @@
     "correct_answer": "InfluxDB"
   }
 ]
-  ]
+  
 }

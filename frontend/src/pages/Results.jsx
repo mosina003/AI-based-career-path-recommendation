@@ -47,17 +47,15 @@ const Results = () => {
   useEffect(() => {
     // Get predictions from navigation state OR localStorage
     let quizResults = location.state?.predictions;
-    
     if (!quizResults) {
       // Try to get from localStorage
       const savedResults = localStorage.getItem('quizResults');
-      
       if (savedResults) {
         try {
           const parsedResults = JSON.parse(savedResults);
           quizResults = parsedResults.predictions;
         } catch (error) {
-          console.error('❌ Error parsing results from localStorage:', error);
+          // ...
         }
       }
     }

@@ -1,5 +1,4 @@
 package com.careerpredictor.service;
-
 import com.careerpredictor.dto.QuizQuestionDTO;
 import com.careerpredictor.dto.QuizDataDTO;
 import com.careerpredictor.dto.QuizSubmissionDTO;
@@ -42,36 +41,6 @@ public class QuizService {
         return allQuestions.subList(0, Math.min(count, allQuestions.size()));
     }
 
-    public QuizScore submitAnswers(QuizSubmissionDTO submission) throws Exception {
-        List<QuizQuestionDTO> allQuestions = getQuestions(submission.getCategory(), 50);
-        double totalWeight = allQuestions.stream().mapToDouble(q -> q.getWeightWithDefault()).sum();
-        double score = 0;
-
-        Map<Integer, String> answers = submission.getLegacyAnswers();
-        if (answers == null || answers.isEmpty()) {
-            System.err.println("No legacy answers found for scoring");
-            answers = new HashMap<>();
-        }
-
-        for (int i = 0; i < Math.min(answers.size(), allQuestions.size()); i++) {
-            QuizQuestionDTO question = allQuestions.get(i);
-            String selected = answers.get(i);
-            if (selected != null && !question.getOptions().isEmpty() && 
-                selected.equals(question.getOptions().get(0).getText())) {
-                score += question.getWeightWithDefault();
-            }
-        }
-
-        double normalizedScore = totalWeight > 0 ? score / totalWeight : 0;
-
-        QuizScore quizScore = new QuizScore();
-        quizScore.setStudentId(submission.getStudentId());
-        quizScore.setCategory(submission.getCategory());
-        quizScore.setScore(normalizedScore);
-
-        return quizScoreRepository.save(quizScore);
-    }
-
     public List<QuizScore> getAllScoresForStudent(Long studentId) {
         return quizScoreRepository.findByStudentId(studentId);
     }
@@ -89,79 +58,83 @@ public class QuizService {
         try {
             System.out.println("Processing quiz submission...");
             submission.logAnswers();
-            
+
             if (!submission.hasValidAnswers()) {
                 throw new IllegalArgumentException("No valid answers provided");
             }
-            
+
             String quizSessionId = UUID.randomUUID().toString();
             Long userId = submission.getUserId() != null ? submission.getUserId() : 1L;
-            
-            Map<String, Integer> answers = submission.getAnswers();
+
+            Map<String, List<Integer>> answers = submission.getAnswers();
+
             if (answers == null) {
                 throw new IllegalArgumentException("No answers provided in correct format");
             }
-            
+
             // Save answers to database
-            for (Map.Entry<String, Integer> entry : answers.entrySet()) {
-                String questionId = entry.getKey();
-                Integer answerIndex = entry.getValue();
-                
-                if (questionId == null || questionId.trim().isEmpty()) {
-                    System.err.println("Warning: Empty question ID received, skipping...");
+            for (Map.Entry<String, List<Integer>> entry : answers.entrySet()) {
+                String category = entry.getKey();
+                List<Integer> answerList = entry.getValue();
+
+                if (answerList == null || answerList.isEmpty()) {
+                    System.err.println("Warning: No answers for category " + category + ", skipping...");
                     continue;
                 }
-                
-                if (answerIndex == null || answerIndex < 0) {
-                    System.err.println("Warning: Invalid answer index for question " + questionId + ", skipping...");
-                    continue;
+
+                for (int i = 0; i < answerList.size(); i++) {
+                    Integer answerIndex = answerList.get(i);
+                    if (answerIndex == null || answerIndex < 0) {
+                        System.err.println("Warning: Invalid answer index for category " + category + ", skipping...");
+                        continue;
+                    }
+
+                    QuizAnswer quizAnswer = new QuizAnswer();
+                    quizAnswer.setQuestionId(category + "-" + i); // You may want to use actual question IDs if available
+                    quizAnswer.setAnswerIndex(answerIndex);
+                    quizAnswer.setUserId(userId);
+                    quizAnswer.setQuizSessionId(quizSessionId);
+                    quizAnswer.setCreatedAt(LocalDateTime.now());
+
+                    quizAnswerRepository.save(quizAnswer);
+                    System.out.println("✅ Saved answer for category: " + category + " [" + i + "] -> " + answerIndex);
                 }
-                
-                QuizAnswer quizAnswer = new QuizAnswer();
-                quizAnswer.setQuestionId(questionId);
-                quizAnswer.setAnswerIndex(answerIndex);
-                quizAnswer.setUserId(userId);
-                quizAnswer.setQuizSessionId(quizSessionId);
-                quizAnswer.setCreatedAt(LocalDateTime.now());
-                
-                quizAnswerRepository.save(quizAnswer);
-                System.out.println("✅ Saved answer for question: " + questionId + " -> " + answerIndex);
             }
-            
+
             // Generate career predictions
             Map<String, Object> response = new HashMap<>();
-            
+
             try {
                 System.out.println("Generating career predictions...");
                 CareerPredictionResult predictions = careerPredictionService.generatePredictions(answers, userId);
-                
+
                 if (predictions != null && predictions.getPredictions() != null && !predictions.getPredictions().isEmpty()) {
                     System.out.println("✅ Generated " + predictions.getPredictions().size() + " career predictions");
-                    
+
                     response.put("success", true);
                     response.put("message", "Quiz submitted successfully");
                     response.put("predictions", predictions.getPredictions());
                     response.put("quizSessionId", quizSessionId);
                     response.put("answersProcessed", submission.getAnswerCount());
-                    
+
                     System.out.println("✅ Returning response with " + predictions.getPredictions().size() + " predictions");
                     return response;
-                    
+
                 } else {
                     System.err.println("❌ Career prediction service returned empty results, using fallback");
                     return createFallbackResponse(answers, quizSessionId);
                 }
-                
+
             } catch (Exception predictionError) {
                 System.err.println("❌ Error generating predictions: " + predictionError.getMessage());
                 predictionError.printStackTrace();
                 return createFallbackResponse(answers, quizSessionId);
             }
-            
+
         } catch (Exception e) {
             System.err.println("❌ Error processing quiz submission: " + e.getMessage());
             e.printStackTrace();
-            
+
             // Return error response instead of throwing exception
             Map<String, Object> errorResponse = new HashMap<>();
             errorResponse.put("success", false);
@@ -171,7 +144,7 @@ public class QuizService {
         }
     }
     
-    private Map<String, Object> createFallbackResponse(Map<String, Integer> answers, String quizSessionId) {
+    private Map<String, Object> createFallbackResponse(Map<String, List<Integer>> answers, String quizSessionId) {
         System.out.println("Creating fallback career predictions...");
         
         Map<String, Object> frontendDev = new HashMap<>();
@@ -220,9 +193,12 @@ public class QuizService {
         response.put("message", "Quiz submitted successfully");
         response.put("predictions", fallbackPredictions);
         response.put("quizSessionId", quizSessionId);
-        response.put("answersProcessed", answers.size());
+
+        // Count total answers processed (sum of all answer lists)
+        int totalAnswers = answers.values().stream().mapToInt(list -> list != null ? list.size() : 0).sum();
+        response.put("answersProcessed", totalAnswers);
         response.put("fallback", true);
-        
+
         System.out.println("✅ Returning fallback response with " + fallbackPredictions.size() + " predictions");
         return response;
     }
